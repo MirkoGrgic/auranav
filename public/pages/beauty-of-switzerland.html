@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Beauty of Switzerland</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-destinations">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Destinations</span>
+
+      <h1>The Beauty of Switzerland</h1>
+
+      <p>
+        Explore alpine villages, breathtaking train rides, crystal-clear lakes,
+        dramatic mountain peaks, and peaceful landscapes across Switzerland.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 11 min read</span>
+        <span><i data-lucide="map-pin"></i> Switzerland</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $3,100</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=1200"
+           alt="Switzerland mountains and lake">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Why Switzerland feels unforgettable</h2>
+
+      <p>
+        Switzerland is one of Europe’s most scenic countries, known for its clean cities,
+        mountain villages, alpine lakes, and world-class train routes. It is a destination
+        where even short transfers can feel like part of the experience.
+      </p>
+
+      <p>
+        Whether you want peaceful lake towns, dramatic mountain viewpoints, or cozy villages
+        surrounded by snow-covered peaks, Switzerland offers a polished and highly scenic
+        travel experience.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Switzerland is expensive, so plan your route carefully. Choosing fewer
+          bases and using scenic trains wisely can make the trip smoother and more cost-effective.
+        </p>
+      </div>
+
+      <h2>Start with Lucerne</h2>
+
+      <p>
+        Lucerne is one of the best introductions to Switzerland. The city has a beautiful
+        lakefront, colorful old-town streets, mountain views, and easy access to nearby
+        day trips. It feels charming without being overwhelming.
+      </p>
+
+      <h2>Ride through the Alps</h2>
+
+      <p>
+        Switzerland’s train journeys are part of the adventure. Routes through mountain
+        valleys, lakes, tunnels, and small villages make the country ideal for travelers
+        who enjoy slow scenic movement between destinations.
+      </p>
+
+      <h2>Visit Interlaken and the Jungfrau region</h2>
+
+      <p>
+        Interlaken is a useful base for exploring famous alpine areas like Lauterbrunnen,
+        Grindelwald, and Jungfraujoch. This region is perfect for hiking, cable cars,
+        waterfalls, and dramatic mountain photography.
+      </p>
+
+      <h2>Explore lakeside towns</h2>
+
+      <p>
+        Swiss lakes are incredibly clear and surrounded by mountains, villages, and walking
+        paths. Towns around Lake Geneva, Lake Lucerne, and Lake Thun are ideal for slower
+        travel days and scenic relaxation.
+      </p>
+
+      <h2>Experience Zermatt and the Matterhorn</h2>
+
+      <p>
+        Zermatt is one of Switzerland’s most iconic mountain destinations. The Matterhorn
+        dominates the skyline, and the village offers hiking routes, viewpoints, restaurants,
+        and a classic alpine atmosphere.
+      </p>
+
+      <h2>Budget and planning tips</h2>
+
+      <ul>
+        <li>Compare train passes before buying individual tickets.</li>
+        <li>Book accommodation early, especially in alpine towns.</li>
+        <li>Use grocery stores and casual cafés to reduce food costs.</li>
+        <li>Stay longer in fewer places instead of changing hotels every night.</li>
+        <li>Check mountain weather before booking expensive cable cars.</li>
+      </ul>
+
+      <h2>Final thoughts</h2>
+
+      <p>
+        Switzerland is not the cheapest destination, but it offers some of the most reliable
+        and beautiful travel experiences in Europe. With smart planning, the country can feel
+        peaceful, cinematic, and worth every moment.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Trip Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Best time</span>
+            <strong>June–September</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal duration</span>
+            <strong>7–10 days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Budget estimate</span>
+            <strong>$3,100+</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Travel style</span>
+            <strong>Scenic, alpine, rail</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Suggested Stops</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Lucerne</strong></div>
+          <div class="trip-fact"><strong>Interlaken</strong></div>
+          <div class="trip-fact"><strong>Lauterbrunnen</strong></div>
+          <div class="trip-fact"><strong>Zermatt</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Good for</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Train lovers</strong></div>
+          <div class="trip-fact"><strong>Couples</strong></div>
+          <div class="trip-fact"><strong>Nature travelers</strong></div>
+          <div class="trip-fact"><strong>Photography trips</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

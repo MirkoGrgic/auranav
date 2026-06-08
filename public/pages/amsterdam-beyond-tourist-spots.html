@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amsterdam Beyond the Tourist Spots</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-local">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Local Secrets</span>
+
+      <h1>Amsterdam Beyond the Tourist Spots</h1>
+
+      <p>
+        Discover peaceful canals, local bakeries, hidden courtyards,
+        creative neighborhoods, and authentic corners of Amsterdam
+        that many visitors never see.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 6 min read</span>
+        <span><i data-lucide="map-pin"></i> Amsterdam</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $1,900</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=1200"
+        alt="Amsterdam Canal">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>There is more to Amsterdam than the city center</h2>
+
+      <p>
+        Most visitors spend their time around Dam Square, the Red Light District,
+        and the busiest canals. While these places are iconic, Amsterdam becomes
+        much more enjoyable when you explore beyond the main tourist routes.
+      </p>
+
+      <p>
+        Local neighborhoods reveal quieter canals, independent cafés,
+        creative communities, and everyday Dutch life.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Rent a bike and spend a day exploring residential
+          neighborhoods instead of staying only in the historic center.
+        </p>
+      </div>
+
+      <h2>Explore Jordaan early in the morning</h2>
+
+      <p>
+        Jordaan is one of Amsterdam's most charming districts. Early mornings
+        are ideal for quiet canal walks, bakery visits, and photography before
+        crowds arrive.
+      </p>
+
+      <h2>Discover Amsterdam Noord</h2>
+
+      <p>
+        Across the river, Amsterdam Noord offers a completely different vibe.
+        Former industrial spaces have been transformed into creative studios,
+        restaurants, and cultural venues.
+      </p>
+
+      <h2>Find hidden courtyards</h2>
+
+      <p>
+        Amsterdam hides peaceful inner courtyards known as hofjes.
+        Many travelers walk past them without realizing they exist.
+      </p>
+
+      <h2>Visit local markets</h2>
+
+      <p>
+        Markets provide an authentic glimpse into daily life.
+        You'll find fresh food, vintage items, and opportunities
+        to interact with locals.
+      </p>
+
+      <h2>Slow down along the canals</h2>
+
+      <p>
+        The city's beauty is best appreciated slowly. Sit beside a canal,
+        grab coffee from a neighborhood café, and watch bicycles and boats
+        pass by.
+      </p>
+
+      <h2>Local travel tips</h2>
+
+      <ul>
+        <li>Rent a bike for neighborhood exploration.</li>
+        <li>Visit major attractions early in the day.</li>
+        <li>Explore Amsterdam Noord by ferry.</li>
+        <li>Spend time in local cafés and bakeries.</li>
+        <li>Walk residential canals away from the center.</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        Amsterdam rewards travelers who move beyond the obvious attractions.
+        Some of the city's best experiences happen in quiet neighborhoods,
+        local cafés, and hidden corners between famous landmarks.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Local Secrets Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Best area</span>
+            <strong>Jordaan</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Daily budget</span>
+            <strong>$80–150</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Best season</span>
+            <strong>Spring</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Travel style</span>
+            <strong>Slow city travel</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Hidden Areas</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Jordaan</strong></div>
+          <div class="trip-fact"><strong>Amsterdam Noord</strong></div>
+          <div class="trip-fact"><strong>De Pijp</strong></div>
+          <div class="trip-fact"><strong>Oud-West</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Local Favorites</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Canal walks</strong></div>
+          <div class="trip-fact"><strong>Neighborhood cafés</strong></div>
+          <div class="trip-fact"><strong>Street markets</strong></div>
+          <div class="trip-fact"><strong>Bike rides</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Avoid Tourist Traps</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Overpriced canal cruises</strong></div>
+          <div class="trip-fact"><strong>Peak-hour attractions</strong></div>
+          <div class="trip-fact"><strong>Main souvenir streets</strong></div>
+          <div class="trip-fact"><strong>Crowded photo spots</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>

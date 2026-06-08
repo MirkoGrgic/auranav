@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patagonia Hiking Guide</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-adventure">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Adventure</span>
+
+      <h1>Patagonia Hiking Guide</h1>
+
+      <p>
+        Discover dramatic mountain peaks, turquoise lakes, glaciers,
+        and some of the most spectacular hiking trails on Earth in the
+        wild landscapes of Patagonia.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 15 min read</span>
+        <span><i data-lucide="map-pin"></i> Patagonia</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $3,400</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=1200"
+           alt="Patagonia Mountains">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Why Patagonia belongs on every hiker's bucket list</h2>
+
+      <p>
+        Patagonia stretches across southern Argentina and Chile and is
+        famous for rugged mountains, massive glaciers, pristine lakes,
+        and endless hiking opportunities.
+      </p>
+
+      <p>
+        Few places in the world combine such dramatic scenery with a sense
+        of true wilderness. Whether you're a beginner or an experienced
+        trekker, Patagonia offers unforgettable adventures.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Patagonia weather changes quickly. Always pack
+          layers and prepare for strong winds even on sunny days.
+        </p>
+      </div>
+
+      <h2>Torres del Paine National Park</h2>
+
+      <p>
+        Chile's Torres del Paine is the most famous hiking destination in
+        Patagonia. The iconic granite towers, turquoise lakes, and wildlife
+        attract adventurers from around the world.
+      </p>
+
+      <h2>Mount Fitz Roy</h2>
+
+      <p>
+        Located near El Chaltén in Argentina, Mount Fitz Roy offers some
+        of the region's most spectacular viewpoints. Sunrise hikes here are
+        considered among the best trekking experiences on Earth.
+      </p>
+
+      <h2>Glacier Adventures</h2>
+
+      <p>
+        Patagonia is home to incredible glaciers including Perito Moreno.
+        Visitors can enjoy boat tours, glacier walks, and scenic viewpoints
+        overlooking immense walls of ice.
+      </p>
+
+      <h2>Wildlife Encounters</h2>
+
+      <p>
+        Guanacos, condors, foxes, and even pumas inhabit Patagonia's vast
+        landscapes. Wildlife photography opportunities are everywhere.
+      </p>
+
+      <h2>Best Time to Visit</h2>
+
+      <p>
+        The hiking season generally runs from November through March when
+        temperatures are milder and trails are more accessible.
+      </p>
+
+      <h2>What to Pack</h2>
+
+      <ul>
+        <li>Waterproof jacket and pants.</li>
+        <li>Strong hiking boots.</li>
+        <li>Wind-resistant layers.</li>
+        <li>Trekking poles.</li>
+        <li>Portable power bank.</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        Patagonia offers some of the most awe-inspiring scenery anywhere
+        in the world. Every trail reveals glaciers, mountains, lakes, and
+        landscapes that feel untouched by time.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Adventure Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Best season</span>
+            <strong>Nov–Mar</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal duration</span>
+            <strong>10–21 days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Budget estimate</span>
+            <strong>$3,400+</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Travel style</span>
+            <strong>Hiking & Nature</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Top Highlights</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Torres del Paine</strong></div>
+          <div class="trip-fact"><strong>Fitz Roy</strong></div>
+          <div class="trip-fact"><strong>Perito Moreno</strong></div>
+          <div class="trip-fact"><strong>El Chaltén</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Difficulty</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Moderate</strong></div>
+          <div class="trip-fact"><strong>Multi-Day Treks</strong></div>
+          <div class="trip-fact"><strong>Mountain Weather</strong></div>
+          <div class="trip-fact"><strong>Remote Areas</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Best For</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Hikers</strong></div>
+          <div class="trip-fact"><strong>Photographers</strong></div>
+          <div class="trip-fact"><strong>Adventure Travelers</strong></div>
+          <div class="trip-fact"><strong>Nature Lovers</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exploring the Canadian Rockies</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-destinations">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+    <div class="article-hero-content">
+      <span class="article-category">Destinations</span>
+
+      <h1>Exploring the Canadian Rockies</h1>
+
+      <p>
+        Discover turquoise lakes, dramatic mountain roads, glacier viewpoints,
+        and unforgettable hiking trails across one of Canada’s most scenic regions.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 9 min read</span>
+        <span><i data-lucide="map-pin"></i> Canada</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $2,400</span>
+      </div>
+    </div>
+
+    <div class="article-hero-image">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200" alt="Canadian Rockies lake and mountains">
+    </div>
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Why the Canadian Rockies are worth the trip</h2>
+      <p>
+        The Canadian Rockies are one of the most iconic mountain regions in North America.
+        With turquoise lakes, snowy peaks, pine forests, wildlife, and scenic drives,
+        this destination is perfect for travelers who want nature, photography, hiking,
+        and peaceful landscapes.
+      </p>
+
+      <p>
+        The route is especially popular around Banff, Lake Louise, Jasper, and the Icefields
+        Parkway. Each stop offers something different, from calm lake views to high mountain
+        trails and dramatic glacier scenery.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: The Canadian Rockies are best planned as a route, not as a single-city trip.
+          Build your itinerary around scenic stops, driving time, hikes, and weather conditions.
+        </p>
+      </div>
+
+      <h2>1. Banff National Park</h2>
+      <p>
+        Banff is usually the starting point for a Rockies adventure. The town is surrounded by
+        mountain views, restaurants, local shops, and easy access to lakes and hiking trails.
+        It works well as a base for the first few days of your trip.
+      </p>
+
+      <h2>2. Lake Louise</h2>
+      <p>
+        Lake Louise is famous for its bright blue water and mountain backdrop. It can get busy,
+        so arriving early is important. Travelers can walk along the lakeshore, take photos,
+        or continue toward nearby hiking routes.
+      </p>
+
+      <h2>3. Moraine Lake</h2>
+      <p>
+        Moraine Lake is one of the most photographed places in Canada. Its color, surrounding
+        peaks, and peaceful atmosphere make it a highlight of the Rockies. Access can be limited,
+        so check shuttle options before planning your visit.
+      </p>
+
+      <h2>4. Icefields Parkway</h2>
+      <p>
+        The Icefields Parkway connects Banff and Jasper and is one of the most scenic drives
+        in the world. Expect glaciers, waterfalls, viewpoints, wildlife, and plenty of places
+        where you will want to stop.
+      </p>
+
+      <h2>5. Jasper National Park</h2>
+      <p>
+        Jasper feels quieter and more spacious than Banff. It is ideal for travelers who want
+        dramatic landscapes with fewer crowds. Maligne Lake, canyon walks, and wildlife viewing
+        are some of the best experiences in the area.
+      </p>
+
+      <h2>Budget and planning tips</h2>
+      <ul>
+        <li>Book accommodation early, especially for summer and early autumn.</li>
+        <li>Renting a car gives you the most flexibility for viewpoints and lakes.</li>
+        <li>Travel in shoulder season for better prices and fewer crowds.</li>
+        <li>Plan extra time for weather changes, road stops, and photo breaks.</li>
+      </ul>
+
+      <h2>Final thoughts</h2>
+      <p>
+        The Canadian Rockies are not just a destination, they are a journey. The best memories
+        often come from the road between stops: a quiet lake, a sudden wildlife sighting,
+        or a mountain view that makes you stop the car.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+        <h3>Trip Snapshot</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact">
+            <span>Best time</span>
+            <strong>June to September</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal duration</span>
+            <strong>7–12 days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Budget estimate</span>
+            <strong>$2,400+</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Travel style</span>
+            <strong>Nature, road trip, hiking</strong>
+          </div>
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Good for</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Nature lovers</strong></div>
+          <div class="trip-fact"><strong>Road trips</strong></div>
+          <div class="trip-fact"><strong>Photography</strong></div>
+          <div class="trip-fact"><strong>Hiking</strong></div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Suggested stops</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Banff</strong></div>
+          <div class="trip-fact"><strong>Lake Louise</strong></div>
+          <div class="trip-fact"><strong>Moraine Lake</strong></div>
+          <div class="trip-fact"><strong>Jasper</strong></div>
+        </div>
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

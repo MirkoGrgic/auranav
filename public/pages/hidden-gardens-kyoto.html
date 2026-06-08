@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Gardens of Kyoto</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-local">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Local Secrets</span>
+
+      <h1>Hidden Gardens of Kyoto</h1>
+
+      <p>
+        Escape the crowds and discover tranquil temple gardens,
+        peaceful bamboo paths, and hidden corners of Kyoto that
+        many visitors overlook.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 7 min read</span>
+        <span><i data-lucide="map-pin"></i> Kyoto</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $2,100</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1200"
+        alt="Kyoto Garden">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Kyoto beyond the famous landmarks</h2>
+
+      <p>
+        Kyoto attracts millions of visitors each year thanks to its
+        temples, shrines, and historic districts. Yet many travelers
+        never discover the quieter side of the city hidden behind
+        walls, stone gates, and winding garden paths.
+      </p>
+
+      <p>
+        Some of Kyoto's most rewarding experiences come from slowing
+        down and spending time in places that rarely appear on
+        standard itineraries.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Visit gardens early in the morning or just
+          before closing time for the most peaceful atmosphere.
+        </p>
+      </div>
+
+      <h2>Discover hidden temple gardens</h2>
+
+      <p>
+        While famous temples receive large crowds, smaller temple
+        complexes often contain beautifully maintained gardens with
+        very few visitors. These locations offer a more authentic
+        experience of Kyoto's traditional culture.
+      </p>
+
+      <h2>Explore lesser-known bamboo paths</h2>
+
+      <p>
+        Most tourists head directly to Arashiyama's bamboo grove,
+        but several smaller bamboo-lined pathways around Kyoto offer
+        similar beauty without the crowds.
+      </p>
+
+      <h2>Seasonal beauty year-round</h2>
+
+      <p>
+        Kyoto changes dramatically with each season. Cherry blossoms,
+        summer greenery, autumn colors, and winter snow create
+        entirely different atmospheres throughout the year.
+      </p>
+
+      <h2>Tea houses and quiet courtyards</h2>
+
+      <p>
+        Hidden tea houses and traditional courtyards provide perfect
+        opportunities to slow down and appreciate Kyoto's calm pace
+        of life.
+      </p>
+
+      <h2>Respect local customs</h2>
+
+      <p>
+        Many gardens remain active religious spaces. Visitors should
+        speak quietly, follow posted rules, and respect local
+        traditions.
+      </p>
+
+      <h2>Travel tips</h2>
+
+      <ul>
+        <li>Visit early in the morning for fewer crowds.</li>
+        <li>Purchase a transit pass for temple hopping.</li>
+        <li>Explore side streets between major attractions.</li>
+        <li>Allow time to simply sit and enjoy garden views.</li>
+        <li>Spring and autumn are the most popular seasons.</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        Kyoto's hidden gardens reveal a quieter side of Japan's most
+        historic city. Travelers willing to venture beyond the famous
+        landmarks often discover the most memorable experiences.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Local Secrets Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Best season</span>
+            <strong>Spring & Autumn</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Daily budget</span>
+            <strong>$100–180</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal stay</span>
+            <strong>3–5 days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Travel style</span>
+            <strong>Cultural & Relaxed</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Must Experience</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Temple Gardens</strong></div>
+          <div class="trip-fact"><strong>Tea Houses</strong></div>
+          <div class="trip-fact"><strong>Bamboo Paths</strong></div>
+          <div class="trip-fact"><strong>Zen Landscapes</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Perfect For</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Photographers</strong></div>
+          <div class="trip-fact"><strong>Couples</strong></div>
+          <div class="trip-fact"><strong>Culture Lovers</strong></div>
+          <div class="trip-fact"><strong>Solo Travelers</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Don't Miss</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Cherry Blossoms</strong></div>
+          <div class="trip-fact"><strong>Autumn Colors</strong></div>
+          <div class="trip-fact"><strong>Traditional Tea</strong></div>
+          <div class="trip-fact"><strong>Quiet Temples</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>

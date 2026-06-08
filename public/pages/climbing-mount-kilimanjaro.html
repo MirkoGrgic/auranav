@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climbing Mount Kilimanjaro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-adventure">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Adventure</span>
+
+      <h1>Climbing Mount Kilimanjaro</h1>
+
+      <p>
+        Reach the roof of Africa and experience one of the world's most
+        famous trekking adventures across glaciers, volcanic landscapes,
+        and breathtaking mountain scenery.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 13 min read</span>
+        <span><i data-lucide="map-pin"></i> Tanzania</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $4,100</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200"
+           alt="Mount Kilimanjaro">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Why Kilimanjaro attracts adventurers worldwide</h2>
+
+      <p>
+        Mount Kilimanjaro stands at 5,895 meters and is the highest mountain
+        in Africa. Unlike many major peaks, it can be climbed without technical
+        mountaineering experience, making it a dream goal for hikers around the world.
+      </p>
+
+      <p>
+        The climb passes through multiple climate zones, from tropical forests
+        to alpine deserts and icy summit landscapes.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: The biggest challenge is altitude, not fitness.
+          Choosing a longer route greatly increases summit success rates.
+        </p>
+      </div>
+
+      <h2>Choose the right route</h2>
+
+      <p>
+        Popular routes include Machame, Lemosho, Rongai, and Marangu.
+        Longer routes provide more time for acclimatization and generally
+        offer better chances of reaching the summit.
+      </p>
+
+      <h2>Understanding altitude sickness</h2>
+
+      <p>
+        Altitude affects every climber differently. Symptoms can include
+        headaches, fatigue, and nausea. Proper pacing and hydration are
+        critical throughout the expedition.
+      </p>
+
+      <h2>Summit night challenge</h2>
+
+      <p>
+        The final ascent begins around midnight. Climbers spend several
+        hours hiking in darkness before reaching Uhuru Peak shortly after sunrise.
+      </p>
+
+      <h2>Prepare physically</h2>
+
+      <p>
+        Training should focus on endurance rather than speed.
+        Long hikes, stair climbing, and consistent cardio sessions
+        help prepare for multiple days on the mountain.
+      </p>
+
+      <h2>What to pack</h2>
+
+      <p>
+        Temperatures can range from tropical heat to freezing conditions.
+        Layered clothing, insulated jackets, gloves, and quality hiking boots
+        are essential for a successful climb.
+      </p>
+
+      <h2>Climbing tips</h2>
+
+      <ul>
+        <li>Choose a route of at least 7 days if possible.</li>
+        <li>Drink plenty of water every day.</li>
+        <li>Walk slowly and conserve energy.</li>
+        <li>Bring quality cold-weather gear.</li>
+        <li>Listen carefully to your guides.</li>
+      </ul>
+
+      <h2>Final thoughts</h2>
+
+      <p>
+        Climbing Kilimanjaro is one of the most rewarding adventures available
+        to non-technical hikers. Reaching Uhuru Peak at sunrise is a moment
+        many travelers remember for the rest of their lives.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Adventure Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Elevation</span>
+            <strong>5,895m</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Difficulty</span>
+            <strong>Moderate–Hard</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Duration</span>
+            <strong>6–9 Days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Best season</span>
+            <strong>Jan–Mar / Jun–Oct</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Route Options</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Machame</strong></div>
+          <div class="trip-fact"><strong>Lemosho</strong></div>
+          <div class="trip-fact"><strong>Marangu</strong></div>
+          <div class="trip-fact"><strong>Rongai</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Recommended Gear</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Down Jacket</strong></div>
+          <div class="trip-fact"><strong>Hiking Boots</strong></div>
+          <div class="trip-fact"><strong>Thermal Layers</strong></div>
+          <div class="trip-fact"><strong>Headlamp</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Best For</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Mountain lovers</strong></div>
+          <div class="trip-fact"><strong>Adventure seekers</strong></div>
+          <div class="trip-fact"><strong>Bucket-list goals</strong></div>
+          <div class="trip-fact"><strong>Experienced hikers</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

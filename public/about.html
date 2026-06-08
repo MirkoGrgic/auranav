@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.25"/>
+    <title>About - AuraNav</title>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="js/about.js" defer></script>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+
+  <li><a href="/">Home</a></li>
+  <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+  <li><a href="/explore">Explore</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/pricing">Pricing</a></li>
+
+  </ul>
+
+  <div class="nav-right">
+
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+
+        <div class="notif-list"></div>
+
+        <div class="notif-footer">
+          View all notifications
+        </div>
+      </div>
+
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <!-- mobile button -->
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<!--ABOUT SECTION-->
+<section class="about-hero">
+  <div class="container center">
+    <h1>
+      Making Travel Planning<br>
+      Effortless for Everyone
+    </h1>
+
+    <p>
+      We believe that everyone deserves to explore the world without the stress of planning.
+      That's why we built AuraNav—an AI-powered platform that creates personalized travel
+      experiences in seconds.
+    </p>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="about-stats">
+  <div class="container stats-grid">
+
+    <div class="stat">
+      <h2>50,000+</h2>
+      <p>Trips Planned</p>
+    </div>
+
+    <div class="stat">
+      <h2>120+</h2>
+      <p>Countries Covered</p>
+    </div>
+
+    <div class="stat">
+      <h2>4.9/5</h2>
+      <p>Average Rating</p>
+    </div>
+
+    <div class="stat">
+      <h2>98%</h2>
+      <p>Customer Satisfaction</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission">
+  <div class="container mission-grid">
+
+    <div >
+      <div class="mission-badge">
+        <i data-lucide="target"></i>
+        <span>Our Mission</span>
+      </div>
+
+      <h2 class="mission-title">
+        Democratizing Travel Through Technology
+      </h2>
+
+      <p class="mission-text">
+        Travel planning shouldn't be overwhelming. For too long, creating the perfect
+        itinerary has required hours of research, countless browser tabs, and endless
+        spreadsheets. We knew there had to be a better way.
+      </p>
+
+      <p class="mission-text">
+        AuraNav was founded in 2026 by a team of travelers and technologists who were
+        frustrated with the status quo. We combined our expertise in artificial intelligence,
+        travel industry knowledge, and user experience design to create something truly
+        revolutionary.
+      </p>
+
+      <p class="mission-text">
+        Today, we're proud to help thousands of travelers discover new destinations, stay
+        within budget, and create unforgettable memories—all with the click of a button.
+      </p>
+    </div>
+
+    <div class="mission-card">
+      <div class="mission-card-box">
+        <i data-lucide="sparkles" class="mission-icon"></i>
+
+        <h3>AI-Powered Planning</h3>
+
+        <p>
+          Our advanced algorithms analyze millions of data points to create the perfect
+          itinerary for your unique preferences and budget.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <div class="container">
+
+    <div class="values-header">
+      <h2>Our Values</h2>
+      <p>The principles that guide everything we do</p>
+    </div>
+
+    <div class="values-grid">
+
+      <div class="value-item">
+        <div class="value-icon">
+          <i data-lucide="sparkles"></i>
+        </div>
+        <div class="value-text">
+          <h3>Innovation First</h3>
+          <p>We leverage cutting-edge AI to reimagine how people plan and experience travel.</p>
+        </div>
+      </div>
+
+      <div class="value-item">
+        <div class="value-icon">
+          <i data-lucide="heart"></i>
+        </div>
+        <div class="value-text">
+          <h3>Traveler-Centric</h3>
+          <p>Every feature is designed with the traveler's needs, dreams, and budget in mind.</p>
+        </div>
+      </div>
+
+      <div class="value-item">
+        <div class="value-icon">
+          <i data-lucide="globe"></i>
+        </div>
+        <div class="value-text">
+          <h3>Global Perspective</h3>
+          <p>We celebrate diversity and help people explore cultures from around the world.</p>
+        </div>
+      </div>
+
+      <div class="value-item">
+        <div class="value-icon">
+          <i data-lucide="award"></i>
+        </div>
+        <div class="value-text">
+          <h3>Excellence</h3>
+          <p>We're committed to providing the highest quality itineraries and experiences.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team-section-auranav">
+  <div class="team-container-auranav">
+
+    <div class="team-header-auranav">
+      <div class="team-badge-auranav">
+        <i data-lucide="users"></i>
+        <span>The Team</span>
+      </div>
+
+      <h2>Meet the People Behind AuraNav</h2>
+
+      <p>
+        We're a diverse team of travelers, engineers, and dreamers working to make travel accessible to everyone.
+      </p>
+    </div>
+
+    <div class="team-grid-auranav">
+
+      <div class="team-card-auranav">
+        <div class="team-avatar blue">SC</div>
+        <h3>Sarah Chen</h3>
+        <p>CEO & Co-Founder</p>
+      </div>
+
+      <div class="team-card-auranav">
+        <div class="team-avatar green">MR</div>
+        <h3>Michael Rodriguez</h3>
+        <p>CTO & Co-Founder</p>
+      </div>
+
+      <div class="team-card-auranav">
+        <div class="team-avatar blue">EW</div>
+        <h3>Emma Williams</h3>
+        <p>Head of AI</p>
+      </div>
+
+      <!-- TI -->
+      <div class="team-card-auranav">
+        <div class="team-avatar cyan">MG</div>
+        <h3>Mirko Grgić</h3>
+        <p>Founder & Software Engineer</p>
+      </div>
+
+      <div class="team-card-auranav">
+        <div class="team-avatar green">LT</div>
+        <h3>Lisa Thompson</h3>
+        <p>Head of Travel Ops</p>
+      </div>
+
+      <div class="team-card-auranav">
+        <div class="team-avatar blue">JK</div>
+        <h3>James Kumar</h3>
+        <p>Lead Engineer</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-section-auranav">
+  <div class="cta-container-auranav">
+
+    <h2 class="cta-title-auranav">
+      Join Us on This Journey
+    </h2>
+
+    <p class="cta-text-auranav">
+      Whether you're planning your first trip or your hundredth, we're here to help make it unforgettable.
+    </p>
+
+    <div class="cta-buttons-auranav">
+
+      <a href="/signup" class="cta-btn-primary-auranav" id="aboutCtaButton">
+        Get Started Free
+      </a>
+
+      <a href="#" class="cta-btn-secondary-auranav">
+        We're Hiring
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    
+    <div class="footer-brand">
+  
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+
+<script type="module" src="js/nav.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.25"/>
+    <title>Pricing</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="js/pricing.js" defer></script>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/pricing.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+
+  <li><a href="/">Home</a></li>
+  <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+  <li><a href="/explore">Explore</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/pricing">Pricing</a></li>
+
+  </ul>
+
+  <div class="nav-right">
+
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+
+        <div class="notif-list"></div>
+
+        <div class="notif-footer">
+          View all notifications
+        </div>
+      </div>
+
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <!-- mobile button -->
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+
+<!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <h1>Simple, Transparent Pricing</h1>
+      <p>
+        Choose the plan that fits your travel style. All plans include our core AI planning features.
+      </p>
+    </div>
+  </section>
+
+<!-- Pricing Section -->
+ <section class="pricing">
+  <div class="container">
+
+    <div class="cards">
+
+      
+      <div class="card">
+
+        <div class="card-header">
+          <div class="icon gray">
+            <i data-lucide="sparkles"></i>
+          </div>
+
+          <h3>Free Plan</h3>
+          <p class="desc">Perfect for occasional travelers</p>
+
+          <div class="price">
+            <span class="amount">$0</span>
+            <span class="period">/forever</span>
+          </div>
+        </div>
+
+        <div class="features">
+
+          <div class="feature included">
+            <span class="circle green"><i data-lucide="check"></i></span>
+            5 AI-generated trips per month
+          </div>
+
+          <div class="feature included">
+            <span class="circle green"><i data-lucide="check"></i></span>
+            Basic itinerary planning
+          </div>
+
+          <div class="feature included">
+            <span class="circle green"><i data-lucide="check"></i></span>
+            Weather forecasts
+          </div>
+
+          <div class="feature included">
+            <span class="circle green"><i data-lucide="check"></i></span>
+            Budget estimator
+          </div>
+
+          <div class="feature included">
+            <span class="circle green"><i data-lucide="check"></i></span>
+            Community support
+          </div>
+
+          <div class="feature excluded">
+            <span class="circle gray"><i data-lucide="x"></i></span>
+            Unlimited trips
+          </div>
+
+          <div class="feature excluded">
+            <span class="circle gray"><i data-lucide="x"></i></span>
+            Offline maps
+          </div>
+
+          <div class="feature excluded">
+            <span class="circle gray"><i data-lucide="x"></i></span>
+            PDF exports
+          </div>
+
+          <div class="feature excluded">
+            <span class="circle gray"><i data-lucide="x"></i></span>
+            Priority support
+          </div>
+
+          <div class="feature excluded">
+            <span class="circle gray"><i data-lucide="x"></i></span>
+            Advanced AI customization
+          </div>
+
+        </div>
+
+        <a href="/signup" class="btn dark" id="freePlanBtn">Get Started Free</a>
+      </div>
+
+
+      
+      <div class="card highlighted">
+
+        <div class="badge">Most Popular</div>
+
+        <div class="card-header">
+          <div class="icon gradient">
+            <i data-lucide="zap"></i>
+          </div>
+
+          <h3>Pro Plan</h3>
+          <p class="desc">For frequent travelers and adventurers</p>
+
+          <div class="price">
+            <span class="amount">$9.99</span>
+            <span class="period">/per month</span>
+          </div>
+        </div>
+
+        <div class="features">
+
+          <div class="feature included"><span class="circle green"><i data-lucide="check"></i></span>Unlimited AI-generated trips</div>
+          <div class="feature included"><span class="circle green"><i data-lucide="check"></i></span>Advanced itinerary planning</div>
+          <div class="feature included"><span class="circle green"><i data-lucide="check"></i></span>Real-time weather alerts</div>
+          <div class="feature included"><span class="circle green"><i data-lucide="check"></i></span>Detailed budget tracking</div>
+          <div class="feature included"><span class="circle green"><i data-lucide="check"></i></span>Priority support</div>
+          <div class="feature included"><span class="circle green"><i data-lucide="check"></i></span>Offline maps & navigation</div>
+          <div class="feature included"><span class="circle green"><i data-lucide="check"></i></span>PDF & mobile exports</div>
+          <div class="feature included"><span class="circle green"><i data-lucide="check"></i></span>Multi-destination trips</div>
+          <div class="feature included"><span class="circle green"><i data-lucide="check"></i></span>Advanced AI customization</div>
+          <div class="feature included"><span class="circle green"><i data-lucide="check"></i></span>Exclusive travel deals</div>
+
+        </div>
+
+        <a href="/signup" class="btn primary" id="proTrialBtn">Start Free Trial</a>
+      </div>
+
+    </div>
+
+    <p class="bottom-text">
+      All plans include secure payment processing and are backed by our 30-day money-back guarantee.
+    </p>
+
+  </div>
+</section>
+
+<!-- Compare Section -->
+<section class="compare">
+  <div class="container">
+
+    <div class="heading">
+      <h2>Compare Plans</h2>
+      <p>See what's included in each plan</p>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="pricing-table">
+
+        <thead>
+          <tr>
+            <th class="left">Feature</th>
+            <th>Free</th>
+            <th>Pro</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>5 AI-generated trips per month</td>
+            <td><i data-lucide="check"></i></td>
+            <td><i data-lucide="check"></i></td>
+          </tr>
+
+          <tr>
+            <td>Basic itinerary planning</td>
+            <td><i data-lucide="check"></i></td>
+            <td><i data-lucide="check"></i></td>
+          </tr>
+
+          <tr>
+            <td>Weather forecasts</td>
+            <td><i data-lucide="check"></i></td>
+            <td><i data-lucide="check"></i></td>
+          </tr>
+
+          <tr>
+            <td>Budget estimator</td>
+            <td><i data-lucide="check"></i></td>
+            <td><i data-lucide="check"></i></td>
+          </tr>
+
+          <tr>
+            <td>Community support</td>
+            <td><i data-lucide="check"></i></td>
+            <td><i data-lucide="check"></i></td>
+          </tr>
+
+          <tr>
+            <td>Unlimited trips</td>
+            <td><i data-lucide="x" class="muted"></i></td>
+            <td><i data-lucide="check"></i></td>
+          </tr>
+
+          <tr>
+            <td>Offline maps</td>
+            <td><i data-lucide="x" class="muted"></i></td>
+            <td><i data-lucide="check"></i></td>
+          </tr>
+
+          <tr>
+            <td>PDF exports</td>
+            <td><i data-lucide="x" class="muted"></i></td>
+            <td><i data-lucide="check"></i></td>
+          </tr>
+
+          <tr>
+            <td>Priority support</td>
+            <td><i data-lucide="x" class="muted"></i></td>
+            <td><i data-lucide="check"></i></td>
+          </tr>
+
+          <tr>
+            <td>Advanced AI customization</td>
+            <td><i data-lucide="x" class="muted"></i></td>
+            <td><i data-lucide="check"></i></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq">
+  <div class="faq-container">
+
+    
+    <div class="faq-heading">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <h3>Can I switch plans later?</h3>
+        <p>
+          Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is there a free trial for Pro?</h3>
+        <p>
+          Yes, we offer a 14-day free trial for the Pro plan. No credit card required to start.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What payment methods do you accept?</h3>
+        <p>
+          We accept all major credit cards, PayPal, and Apple Pay.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I cancel anytime?</h3>
+        <p>
+          Absolutely! Cancel anytime with no questions asked. You'll retain access until the end of your billing period.
+        </p>
+      </div>
+
+    </div>
+
+    
+    <div class="faq-bottom">
+      <p>Still have questions?</p>
+      <a href="#">Contact our support team →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+  <div class="cta-container">
+
+    <h2>Ready to Start Your Adventure?</h2>
+
+    <p>
+      Join thousands of travelers who trust AuraNav to plan their perfect trips.
+    </p>
+
+    <a href="/signup" class="cta-btn" id="bottomTrialBtn">
+      Start Free Trial
+    </a>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    
+    <div class="footer-brand">
+  
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+<script type="module" src="js/nav.js"></script>
+<script>
+  lucide.createIcons();
+</script>    
+</body>
+</html>

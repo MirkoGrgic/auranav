@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New York City on a Budget</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-budget">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Budget Tips</span>
+
+      <h1>New York City on a Budget</h1>
+
+      <p>
+        Experience the energy of New York City without draining your bank account.
+        Discover affordable attractions, cheap eats, and smart ways to explore NYC.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 7 min read</span>
+        <span><i data-lucide="map-pin"></i> New York</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $1,400</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200"
+           alt="New York City">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Can New York really be affordable?</h2>
+
+      <p>
+        New York has a reputation for being one of the most expensive cities
+        in the world. While luxury hotels and high-end restaurants can quickly
+        increase your costs, the city also offers countless affordable ways
+        to experience its iconic atmosphere.
+      </p>
+
+      <p>
+        With smart planning, public transportation, and a few local tricks,
+        you can enjoy an unforgettable NYC trip without spending a fortune.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Your biggest expenses will be accommodation and food.
+          Saving money in those two categories can dramatically reduce your trip budget.
+        </p>
+      </div>
+
+      <h2>Use the subway</h2>
+
+      <p>
+        Taxis and rideshare services can quickly become expensive.
+        New York's subway system is one of the fastest and cheapest ways
+        to move around the city while avoiding traffic.
+      </p>
+
+      <h2>Explore free attractions</h2>
+
+      <p>
+        Many of NYC's most famous experiences are completely free.
+        Walk through Central Park, cross the Brooklyn Bridge,
+        visit Times Square, and enjoy skyline views from public areas.
+      </p>
+
+      <h2>Find affordable food</h2>
+
+      <p>
+        Street food, pizza slices, bagel shops, food halls, and local diners
+        offer excellent meals at a fraction of restaurant prices.
+        Some of the city's best food experiences are surprisingly inexpensive.
+      </p>
+
+      <h2>Choose your accommodation carefully</h2>
+
+      <p>
+        Staying slightly outside Manhattan can save hundreds of dollars.
+        Areas in Brooklyn, Queens, and parts of Jersey City often provide
+        excellent value while remaining well connected by public transport.
+      </p>
+
+      <h2>Visit museums strategically</h2>
+
+      <p>
+        Several museums offer free-entry days or pay-what-you-wish admission.
+        Checking schedules in advance can significantly reduce sightseeing costs.
+      </p>
+
+      <h2>Budget breakdown</h2>
+
+      <ul>
+        <li>Budget traveler: $90–$150 per day</li>
+        <li>Mid-range traveler: $180–$300 per day</li>
+        <li>Accommodation: biggest expense</li>
+        <li>Subway: best transportation value</li>
+      </ul>
+
+      <h2>Final thoughts</h2>
+
+      <p>
+        New York doesn't have to be a luxury destination.
+        By focusing on public transportation, free attractions,
+        and local food options, you can experience one of the world's
+        greatest cities while staying within a reasonable budget.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Budget Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Daily budget</span>
+            <strong>$90–$300</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal duration</span>
+            <strong>4–7 days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Trip estimate</span>
+            <strong>$1,400+</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Biggest cost</span>
+            <strong>Hotels</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Free Highlights</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Central Park</strong></div>
+          <div class="trip-fact"><strong>Brooklyn Bridge</strong></div>
+          <div class="trip-fact"><strong>Times Square</strong></div>
+          <div class="trip-fact"><strong>High Line</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Save Money By</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Using subway</strong></div>
+          <div class="trip-fact"><strong>Staying in Brooklyn</strong></div>
+          <div class="trip-fact"><strong>Eating local</strong></div>
+          <div class="trip-fact"><strong>Free attractions</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Flavors of Istanbul</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-food">
+
+  <a href="/explore" class="article-back">← Back to Explore</a>
+
+  <section class="article-hero">
+    <div class="article-hero-content">
+      <span class="article-category">Food & Culture</span>
+
+      <h1>The Flavors of Istanbul</h1>
+
+      <p>
+        Experience Turkish tea, kebabs, baklava, spice markets,
+        ferry snacks, street food, and centuries of food culture
+        between Europe and Asia.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 9 min read</span>
+        <span><i data-lucide="map-pin"></i> Istanbul</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $1,500</span>
+      </div>
+    </div>
+
+    <div class="article-hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200"
+        alt="Istanbul food and culture">
+    </div>
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>A city built for food lovers</h2>
+
+      <p>
+        Istanbul’s food scene reflects its unique position between Europe
+        and Asia. Every neighborhood has its own flavors, from traditional
+        kebab houses and seafood restaurants to small bakeries, tea gardens,
+        and busy street food stalls.
+      </p>
+
+      <p>
+        Food is one of the best ways to understand the city. A single day
+        can include simit by the water, Turkish coffee in a quiet café,
+        grilled fish near the Bosphorus, and baklava after dinner.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Explore both the European and Asian sides of Istanbul.
+          Kadıköy is especially good for local food and casual dining.
+        </p>
+      </div>
+
+      <h2>Start with Turkish breakfast</h2>
+
+      <p>
+        A traditional Turkish breakfast can include cheese, olives, eggs,
+        tomatoes, honey, bread, tea, and small shared plates. It is one of
+        the most enjoyable ways to begin a slow day in Istanbul.
+      </p>
+
+      <h2>Try street food classics</h2>
+
+      <p>
+        Simit, roasted chestnuts, corn, döner, kokoreç, and fish sandwiches
+        are easy to find around busy streets, ferries, and markets.
+      </p>
+
+      <h2>Visit the Spice Bazaar</h2>
+
+      <p>
+        The Spice Bazaar is full of color, aroma, sweets, teas, dried fruit,
+        Turkish delight, and spices. It is touristy, but still worth visiting
+        for the atmosphere.
+      </p>
+
+      <h2>Eat in Kadıköy</h2>
+
+      <p>
+        Kadıköy has one of Istanbul’s best local food scenes, with casual
+        restaurants, bakeries, coffee shops, meyhanes, and modern dining spots.
+      </p>
+
+      <h2>Save room for dessert</h2>
+
+      <p>
+        Baklava, künefe, sütlaç, and Turkish delight are essential parts of
+        the city’s food culture. Pair dessert with strong Turkish tea or coffee.
+      </p>
+
+      <h2>Food planning tips</h2>
+
+      <ul>
+        <li>Use ferries to combine sightseeing with food stops.</li>
+        <li>Eat away from major landmark entrances for better value.</li>
+        <li>Try small local bakeries in the morning.</li>
+        <li>Visit Kadıköy for a more local evening food experience.</li>
+        <li>Carry some cash for smaller stalls and markets.</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        Istanbul is a city where food, history, and daily life are deeply
+        connected. The best meals often happen between sightseeing stops,
+        inside markets, on side streets, or after crossing the Bosphorus by ferry.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+        <h3>Food Snapshot</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact">
+            <span>Best area</span>
+            <strong>Kadıköy</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Food budget</span>
+            <strong>$25–$60/day</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Must try</span>
+            <strong>Baklava & Tea</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Travel style</span>
+            <strong>Food & Culture</strong>
+          </div>
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this food trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Must Try Foods</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Simit</strong></div>
+          <div class="trip-fact"><strong>Döner</strong></div>
+          <div class="trip-fact"><strong>Baklava</strong></div>
+          <div class="trip-fact"><strong>Turkish Breakfast</strong></div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Best Food Areas</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Kadıköy</strong></div>
+          <div class="trip-fact"><strong>Karaköy</strong></div>
+          <div class="trip-fact"><strong>Eminönü</strong></div>
+          <div class="trip-fact"><strong>Beşiktaş</strong></div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Cultural Highlights</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Spice Bazaar</strong></div>
+          <div class="trip-fact"><strong>Tea Gardens</strong></div>
+          <div class="trip-fact"><strong>Bosphorus Ferries</strong></div>
+          <div class="trip-fact"><strong>Local Meyhanes</strong></div>
+        </div>
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>

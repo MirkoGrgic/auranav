@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Underground Tokyo Nightlife</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-local">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Local Secrets</span>
+
+      <h1>Underground Tokyo Nightlife</h1>
+
+      <p>
+        Explore Tokyo after dark through hidden izakayas, neon alleys,
+        retro arcades, tiny bars, late-night ramen shops, and creative
+        neighborhoods locals love.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 8 min read</span>
+        <span><i data-lucide="map-pin"></i> Tokyo</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $2,200</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=1200"
+        alt="Tokyo nightlife">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Tokyo after dark feels like another city</h2>
+
+      <p>
+        Tokyo is impressive during the day, but the city becomes even more
+        interesting at night. Neon signs, narrow alleys, tiny bars, late-night
+        food spots, and hidden entertainment districts create an atmosphere
+        unlike anywhere else.
+      </p>
+
+      <p>
+        The best nightlife experiences are not always the biggest clubs or
+        most famous streets. Often, they are found in small izakayas, quiet
+        jazz bars, retro arcades, and local neighborhoods that reward curiosity.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Tokyo nightlife is best explored by neighborhood.
+          Choose one area per evening instead of jumping across the whole city.
+        </p>
+      </div>
+
+      <h2>Start in Shinjuku</h2>
+
+      <p>
+        Shinjuku is one of Tokyo's most energetic nighttime districts.
+        Bright lights, entertainment venues, food alleys, and late-night
+        restaurants make it a strong starting point for first-time visitors.
+      </p>
+
+      <h2>Explore Golden Gai</h2>
+
+      <p>
+        Golden Gai is famous for its tiny bars packed into narrow lanes.
+        Each bar has its own personality, music, theme, and atmosphere.
+        Some are tourist-friendly, while others feel more local and intimate.
+      </p>
+
+      <h2>Visit Omoide Yokocho</h2>
+
+      <p>
+        Also known as Memory Lane, this small alley near Shinjuku Station
+        is full of grilled food stalls and compact eateries. It is perfect
+        for a casual late-night meal.
+      </p>
+
+      <h2>Discover retro arcades</h2>
+
+      <p>
+        Tokyo's gaming culture is a major part of its nightlife.
+        Arcades, rhythm games, crane machines, and retro gaming spaces
+        offer a fun alternative to bars and clubs.
+      </p>
+
+      <h2>Late-night ramen and izakayas</h2>
+
+      <p>
+        After a night out, ramen shops and izakayas are some of the best
+        places to end the evening. Small plates, drinks, noodles, and casual
+        conversation are central to Tokyo's after-dark culture.
+      </p>
+
+      <h2>Nightlife planning tips</h2>
+
+      <ul>
+        <li>Check last train times before going out.</li>
+        <li>Carry some cash for small bars and food stalls.</li>
+        <li>Respect small venue rules and seating charges.</li>
+        <li>Stay in one neighborhood per night.</li>
+        <li>Try late-night food instead of only bars.</li>
+      </ul>
+
+      <h2>Final thoughts</h2>
+
+      <p>
+        Tokyo nightlife is layered, creative, and endlessly varied.
+        From hidden bars to ramen counters and arcades, the city rewards
+        travelers who wander beyond the obvious nightlife spots.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Local Secrets Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Best area</span>
+            <strong>Shinjuku</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Night budget</span>
+            <strong>$30–$90</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Best time</span>
+            <strong>After 8 PM</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Travel style</span>
+            <strong>Urban nightlife</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Hidden Night Areas</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Golden Gai</strong></div>
+          <div class="trip-fact"><strong>Omoide Yokocho</strong></div>
+          <div class="trip-fact"><strong>Shimokitazawa</strong></div>
+          <div class="trip-fact"><strong>Koenji</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Local Tips</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Know last trains</strong></div>
+          <div class="trip-fact"><strong>Carry cash</strong></div>
+          <div class="trip-fact"><strong>Respect small bars</strong></div>
+          <div class="trip-fact"><strong>Try late ramen</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Avoid Tourist Traps</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Pushy street promoters</strong></div>
+          <div class="trip-fact"><strong>Unclear cover charges</strong></div>
+          <div class="trip-fact"><strong>Overpriced themed bars</strong></div>
+          <div class="trip-fact"><strong>Random club offers</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>

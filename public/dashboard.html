@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.25">
+    <title>AuraNav Dashboard</title>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="js/trip.js" defer></script>
+    <script type="module" src="js/dashboard.js" defer></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="nav">
+    <div class="logo">
+        <div class="logo-icon">
+        <i data-lucide="plane"></i>
+        </div>
+        <span><a href="/">AuraNav</a></span>
+    </div>
+
+    <ul class="nav-links">
+
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+
+    </ul>
+
+    <div class="nav-right">
+
+        <div class="notification">
+        <i data-lucide="bell"></i>
+        <span class="badge-count">0</span>
+
+        <div class="notif-dropdown hidden">
+            <h4>Notifications</h4>
+
+            <div class="notif-list"></div>
+
+            <div class="notif-footer">
+            View all notifications
+            </div>
+        </div>
+
+        </div>
+
+        <div id="userArea" class="auth-area"></div>
+
+        <!-- mobile button -->
+        <button id="menuBtn" class="menu-btn">
+        <i data-lucide="menu"></i>
+        </button>
+    </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="mobile-menu hidden">
+    <a href="/">Home</a>
+    <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+    <a href="/explore">Explore</a>
+    <a href="/about">About</a>
+    <a href="/pricing">Pricing</a>
+    </div>
+
+    <main class="dashboard-page">
+    <!-- HERO SECTION -->
+    <section class="dashboard-hero">
+        <div>
+        <span class="dashboard-badge">
+            <i data-lucide="sparkles"></i>
+            AI Travel Dashboard
+        </span>
+
+        <h1>Your trip control center</h1>
+        <p>Manage your trips, explore locations, generate daily plans, and track weather and budget.</p>
+        </div>
+
+        <div class="trip-summary-card">
+        <p>Active Trip</p>
+        <h2 id="dashboardDestination">No trip selected</h2>
+        <span id="dashboardDates">—</span>
+        <strong id="dashboardBudget">—</strong>
+        </div>
+    </section>
+
+    <!-- CONTROL PANELS -->
+    <section class="dashboard-top-grid">
+
+        <div class="panel">
+        <div class="panel-header">
+            <div>
+            <h2>Trip Manager</h2>
+            <p>Select an existing trip or create a new one.</p>
+            </div>
+            <i data-lucide="map"></i>
+        </div>
+
+        <label class="field-label">Your trips</label>
+        <select id="tripSelect" class="dashboard-input">
+            <option value="">Current active trip</option>
+        </select>
+
+        <div class="create-trip-box">
+            <h3>Create New Trip</h3>
+
+            <div class="form-grid">
+            <input id="dashboardNewDestination" class="dashboard-input" type="text" placeholder="City, e.g. Paris">
+            <input id="dashboardNewBudget" class="dashboard-input" type="number" min="1" placeholder="Budget $">
+            </div>
+
+            <div class="form-grid">
+            <input id="dashboardNewStartDate" class="dashboard-input" type="text" placeholder="Select start date" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'">
+            <input id="dashboardNewEndDate" class="dashboard-input" type="text" placeholder="Select end date" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'">
+            </div>
+
+            <button id="dashboardCreateTripBtn" class="primary-action">
+            <i data-lucide="plus"></i>
+            Create Trip
+            </button>
+        </div>
+        </div>
+
+        <div class="panel current-trip-panel">
+        <div class="panel-header">
+            <div>
+            <h2>Current Details</h2>
+            <p>Overview of your selected trip.</p>
+            </div>
+            <i data-lucide="calendar-days"></i>
+        </div>
+
+        <div class="detail-list">
+            <div>
+            <span>Destination</span>
+            <strong id="dashboardDestinationSmall">No trip selected</strong>
+            </div>
+
+            <div>
+            <span>Dates</span>
+            <strong id="dashboardDatesSmall">—</strong>
+            </div>
+
+            <div>
+            <span>Budget</span>
+            <strong id="dashboardBudgetSmall">—</strong>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- MAP & LOCATIONS -->
+    <section class="map-section">
+
+        <div class="panel locations-panel">
+        <div class="panel-header">
+            <div>
+            <h2>Trip Locations</h2>
+            <p>Click a place to focus it on the map.</p>
+            </div>
+            <i data-lucide="map-pin"></i>
+        </div>
+
+        <div id="locationsList" class="locations-list">
+            <div class="empty-state">Locations will appear here after a trip is loaded.</div>
+        </div>
+        </div>
+
+        <div class="panel map-panel">
+        <div id="map"></div>
+        </div>
+
+    </section>
+    
+    <!-- AI PLANNING & WEATHER -->
+    <section class="bottom-grid">
+
+        <div class="panel ai-panel">
+        <div class="panel-header">
+            <div>
+            <h2>AI Daily Plan</h2>
+            <p>Generate a detailed itinerary using locations, dates, budget and weather.</p>
+            </div>
+            <i data-lucide="bot"></i>
+        </div>
+
+        <button id="aiBtn" class="primary-action green">
+            <i data-lucide="sparkles"></i>
+            Generate Daily Plan
+        </button>
+
+        <div id="aiStatus" class="ai-status"></div>
+
+        <div id="aiAnalysis" class="ai-analysis">
+            <strong>AI Tip & Weather</strong>
+            <p id="analysisText"></p>
+        </div>
+
+        <div id="aiPlanResult" class="ai-plan-result">
+            <div class="ai-empty-plan">
+                <div class="ai-empty-icon">
+                    <i data-lucide="route"></i>
+                </div>
+
+                <h3>No itinerary generated yet</h3>
+
+                <p>
+                    Generate a daily plan to see your personalized schedule, activities,
+                    estimated costs, and travel tips here.
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <aside class="right-stack">
+
+        <div class="panel">
+            <div class="panel-header">
+            <div>
+                <h2>5-Day Weather</h2>
+                <p>Latest available forecast.</p>
+            </div>
+            <i data-lucide="cloud-sun"></i>
+            </div>
+
+            <div id="weatherCards" class="weather-cards">
+            <div class="empty-state">Weather will appear here.</div>
+            </div>
+
+            <button id="refreshWeatherBtn" class="secondary-action">
+            <i data-lucide="refresh-cw"></i>
+            Refresh Weather
+            </button>
+        </div>
+
+        <div class="panel">
+            <div class="panel-header">
+            <div>
+                <h2>Budget Snapshot</h2>
+                <p>Simple estimate for this trip.</p>
+            </div>
+            <i data-lucide="wallet"></i>
+            </div>
+
+            <div class="budget-card">
+            <div class="budget-circle">
+                <span id="budgetCircleValue">$0</span>
+            </div>
+
+            <div class="budget-info">
+                <p>Total Budget</p>
+                <strong id="budgetTotalText">Not selected</strong>
+
+                <div class="budget-lines">
+                    <span>Estimated spent: <b id="budgetSpentText">$0</b></span>
+                    <span>Remaining: <b id="budgetRemainingText">$0</b></span>
+                </div>
+
+                <small id="budgetStatusText">Generate a plan to estimate costs.</small>
+            </div>
+            </div>
+        </div>
+
+        </aside>
+
+    </section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        
+        <div class="footer-brand">
+    
+        <div class="footer-brand-top">
+            <div class="footer-logo">
+            <i data-lucide="plane"></i>
+            </div>
+            <h3>AuraNav</h3>
+        </div>
+
+        <p>Your next adventure, planned by AI.</p>
+        </div>
+
+        
+        <div class="footer-column">
+        <h4>Product</h4>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/explore">Blog</a>
+        </div>
+
+        
+        <div class="footer-column">
+        <h4>Company</h4>
+        <a href="/about">About Us</a>
+        <a href="/about">Careers</a>
+        <a href="/about">Contact</a>
+        </div>
+
+        
+        <div class="footer-column">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        </div>
+
+    </div>
+
+    
+    <div class="footer-bottom">
+        © 2026 AuraNav. All rights reserved.
+    </div>
+    </footer>
+    <script type="module" src="js/nav.js"></script>
+    <script>
+    lucide.createIcons();
+    </script>   
+</body>
+</html>

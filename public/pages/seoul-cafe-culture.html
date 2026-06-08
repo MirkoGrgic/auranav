@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exploring Korean Café Culture</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-food">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Food & Culture</span>
+
+      <h1>Exploring Korean Café Culture</h1>
+
+      <p>
+        Step inside Seoul’s most aesthetic cafés, from minimalist coffee bars
+        and rooftop spaces to dessert cafés, study spots, and creative themed interiors.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 6 min read</span>
+        <span><i data-lucide="map-pin"></i> Seoul</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $1,700</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200"
+           alt="Coffee shop">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Why Seoul cafés are more than coffee</h2>
+
+      <p>
+        Seoul’s café culture is famous for creativity, design, atmosphere, and detail.
+        A café in Seoul is often more than a place to drink coffee — it can be a social space,
+        a study spot, a photography location, a dessert destination, or even a quiet retreat
+        from the city’s busy streets.
+      </p>
+
+      <p>
+        From sleek specialty coffee shops to cozy neighborhood cafés and themed interiors,
+        Seoul offers a café experience for every type of traveler.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Plan café stops between larger sightseeing areas. Seoul is huge,
+          so grouping cafés by neighborhood makes your day much easier.
+        </p>
+      </div>
+
+      <h2>Explore Hongdae’s creative café scene</h2>
+
+      <p>
+        Hongdae is known for youth culture, music, design, and nightlife.
+        Its cafés often feel playful, artistic, and experimental, making the area ideal
+        for travelers who enjoy creative interiors and unique desserts.
+      </p>
+
+      <h2>Visit minimalist cafés in Seongsu</h2>
+
+      <p>
+        Seongsu has become one of Seoul’s trendiest café neighborhoods.
+        Former industrial spaces have been transformed into stylish coffee shops,
+        bakeries, galleries, and concept stores.
+      </p>
+
+      <h2>Try Korean-style desserts</h2>
+
+      <p>
+        Café culture in Seoul is strongly connected to dessert.
+        Look for bingsu, cream cakes, croffles, matcha treats, sweet breads,
+        and beautifully plated seasonal desserts.
+      </p>
+
+      <h2>Find study and work-friendly cafés</h2>
+
+      <p>
+        Many cafés in Seoul are comfortable for reading, studying, or remote work.
+        Some offer spacious tables, quiet corners, strong Wi-Fi, and a calm atmosphere.
+      </p>
+
+      <h2>Enjoy rooftop and view cafés</h2>
+
+      <p>
+        Seoul’s hills, river views, and skyline make rooftop cafés especially appealing.
+        Visiting near sunset can turn a simple coffee stop into a memorable travel moment.
+      </p>
+
+      <h2>Café planning tips</h2>
+
+      <ul>
+        <li>Group cafés by neighborhood to avoid long metro transfers.</li>
+        <li>Expect popular cafés to be crowded on weekends.</li>
+        <li>Order at least one drink per person when sitting inside.</li>
+        <li>Check opening times because some cafés open later in the day.</li>
+        <li>Try both specialty coffee and Korean desserts.</li>
+      </ul>
+
+      <h2>Final thoughts</h2>
+
+      <p>
+        Seoul café culture is one of the most enjoyable parts of visiting the city.
+        Whether you want great coffee, stylish interiors, peaceful study spots, or
+        beautiful desserts, Seoul turns café-hopping into a full travel experience.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Café Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Best style</span>
+            <strong>Aesthetic cafés</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Daily café budget</span>
+            <strong>$10–$35</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal duration</span>
+            <strong>3–6 days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Best use</span>
+            <strong>Breaks + photos</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Best Café Areas</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Hongdae</strong></div>
+          <div class="trip-fact"><strong>Seongsu</strong></div>
+          <div class="trip-fact"><strong>Ikseon-dong</strong></div>
+          <div class="trip-fact"><strong>Gangnam</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Must Try</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Bingsu</strong></div>
+          <div class="trip-fact"><strong>Croffles</strong></div>
+          <div class="trip-fact"><strong>Matcha desserts</strong></div>
+          <div class="trip-fact"><strong>Specialty coffee</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Café Tips</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Avoid peak weekends</strong></div>
+          <div class="trip-fact"><strong>Check opening hours</strong></div>
+          <div class="trip-fact"><strong>Order per person</strong></div>
+          <div class="trip-fact"><strong>Save locations first</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

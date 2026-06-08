@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Zealand Campervan Journey</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-roadtrip">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Road Trips</span>
+
+      <h1>New Zealand Campervan Journey</h1>
+
+      <p>
+        Explore dramatic mountains, crystal-clear lakes, coastal roads,
+        and remote wilderness while enjoying the freedom of traveling
+        New Zealand by campervan.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 8 min read</span>
+        <span><i data-lucide="map-pin"></i> New Zealand</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $3,000</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200"
+        alt="New Zealand Campervan">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Why New Zealand is a Campervan Paradise</h2>
+
+      <p>
+        Few countries are better suited to campervan travel than New Zealand.
+        The combination of excellent roads, scenic campsites, and constantly
+        changing landscapes creates one of the world's greatest road trip
+        experiences.
+      </p>
+
+      <p>
+        In a single day you can drive from snow-capped mountains to beaches,
+        pass through rainforests, and end your evening beside a lake under
+        some of the clearest night skies on Earth.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Download offline maps before leaving major cities.
+          Mobile coverage can disappear in some remote regions.
+        </p>
+      </div>
+
+      <h2>North Island Highlights</h2>
+
+      <p>
+        The North Island offers geothermal wonders, Maori culture, volcanic
+        landscapes, and vibrant cities. Popular stops include Auckland,
+        Rotorua, Taupo, and the Coromandel Peninsula.
+      </p>
+
+      <h2>Rotorua's Geothermal Landscapes</h2>
+
+      <p>
+        Rotorua is famous for bubbling mud pools, geysers, hot springs,
+        and cultural experiences that showcase New Zealand's indigenous
+        heritage.
+      </p>
+
+      <h2>Crossing to the South Island</h2>
+
+      <p>
+        The ferry journey between Wellington and Picton is often considered
+        one of the most beautiful ferry crossings in the world, passing
+        through stunning coastal scenery.
+      </p>
+
+      <h2>South Island Adventures</h2>
+
+      <p>
+        Many travelers consider the South Island the highlight of New Zealand.
+        Expect dramatic mountains, fjords, glaciers, and some of the most
+        scenic roads anywhere on the planet.
+      </p>
+
+      <h2>Milford Sound and Fiordland</h2>
+
+      <p>
+        Fiordland National Park delivers towering cliffs, waterfalls,
+        and unforgettable boat cruises through pristine wilderness.
+      </p>
+
+      <h2>Queenstown and Wanaka</h2>
+
+      <p>
+        These towns provide a perfect mix of adventure activities,
+        lakeside scenery, and excellent campervan facilities.
+      </p>
+
+      <h2>Campervan Travel Tips</h2>
+
+      <ul>
+        <li>Book campsites early during peak summer months.</li>
+        <li>Allow extra driving time for scenic stops.</li>
+        <li>Prepare for rapidly changing weather conditions.</li>
+        <li>Respect freedom camping regulations.</li>
+        <li>Carry food and supplies for remote regions.</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        New Zealand feels like it was designed specifically for road trips.
+        Every day reveals another breathtaking landscape, making campervan
+        travel one of the best ways to experience the country's natural beauty.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Road Trip Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Best season</span>
+            <strong>Nov–Mar</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal duration</span>
+            <strong>2–4 weeks</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Budget estimate</span>
+            <strong>$3,000+</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Travel style</span>
+            <strong>Campervan Adventure</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this road trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Must Visit Stops</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Rotorua</strong></div>
+          <div class="trip-fact"><strong>Queenstown</strong></div>
+          <div class="trip-fact"><strong>Milford Sound</strong></div>
+          <div class="trip-fact"><strong>Lake Tekapo</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Road Trip Style</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Nature</strong></div>
+          <div class="trip-fact"><strong>Adventure</strong></div>
+          <div class="trip-fact"><strong>Photography</strong></div>
+          <div class="trip-fact"><strong>Freedom Camping</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Best For</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Couples</strong></div>
+          <div class="trip-fact"><strong>Nature Lovers</strong></div>
+          <div class="trip-fact"><strong>Road Trippers</strong></div>
+          <div class="trip-fact"><strong>Adventure Travelers</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>

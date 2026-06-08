@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Italian Cuisine Beyond Pizza</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-food">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Food & Culture</span>
+
+      <h1>Italian Cuisine Beyond Pizza</h1>
+
+      <p>
+        Discover authentic pasta dishes, regional specialties, local wines,
+        hidden trattorias, and the deeper food culture that makes Italy unforgettable.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 6 min read</span>
+        <span><i data-lucide="map-pin"></i> Italy</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $2,100</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img src="https://images.unsplash.com/photo-1498579809087-ef1e558fd1da?w=1200"
+           alt="Italian food and wine">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Italy is much more than pizza</h2>
+
+      <p>
+        Pizza may be one of Italy’s most famous exports, but the country’s food culture
+        is far more diverse. Each region has its own ingredients, traditions, pasta shapes,
+        sauces, wines, cheeses, and local specialties.
+      </p>
+
+      <p>
+        Traveling through Italy with food in mind means exploring regional identity.
+        A meal in Rome feels different from a meal in Bologna, Naples, Florence, or Sicily.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Avoid eating only near famous landmarks. Smaller side streets,
+          neighborhood trattorias, and local markets often offer better food and better prices.
+        </p>
+      </div>
+
+      <h2>Try regional pasta dishes</h2>
+
+      <p>
+        Pasta changes dramatically from region to region. In Rome, look for carbonara,
+        cacio e pepe, amatriciana, and gricia. In Bologna, try tagliatelle al ragù.
+        In Liguria, pesto is a must.
+      </p>
+
+      <h2>Visit local markets</h2>
+
+      <p>
+        Italian markets are a great way to understand local food culture.
+        You can find fresh produce, cheeses, cured meats, bread, olives,
+        and seasonal ingredients that shape everyday cooking.
+      </p>
+
+      <h2>Discover hidden trattorias</h2>
+
+      <p>
+        Trattorias are often simple, family-run restaurants focused on traditional food.
+        They are usually less formal than fine dining restaurants and can provide some of
+        the most memorable meals of a trip.
+      </p>
+
+      <h2>Pair food with local wine</h2>
+
+      <p>
+        Wine is part of Italian dining culture. Tuscany, Piedmont, Veneto, Sicily,
+        and many other regions offer wines that pair naturally with local dishes.
+      </p>
+
+      <h2>Save room for dessert</h2>
+
+      <p>
+        Gelato, tiramisu, cannoli, panna cotta, and regional pastries make dessert
+        an essential part of the Italian food experience.
+      </p>
+
+      <h2>Must-try foods</h2>
+
+      <ul>
+        <li>Cacio e Pepe</li>
+        <li>Tagliatelle al Ragù</li>
+        <li>Risotto</li>
+        <li>Prosciutto and local cheese</li>
+        <li>Gelato</li>
+        <li>Tiramisu</li>
+      </ul>
+
+      <h2>Final thoughts</h2>
+
+      <p>
+        Italy rewards travelers who slow down and eat regionally.
+        Instead of chasing only famous dishes, let each city and region introduce
+        you to something different.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Food Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Best meal style</span>
+            <strong>Trattorias</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Daily food budget</span>
+            <strong>$35–$100</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal duration</span>
+            <strong>7–10 days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Food style</span>
+            <strong>Regional</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Must Try</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Cacio e Pepe</strong></div>
+          <div class="trip-fact"><strong>Tagliatelle al Ragù</strong></div>
+          <div class="trip-fact"><strong>Gelato</strong></div>
+          <div class="trip-fact"><strong>Tiramisu</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Best Food Regions</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Rome</strong></div>
+          <div class="trip-fact"><strong>Bologna</strong></div>
+          <div class="trip-fact"><strong>Tuscany</strong></div>
+          <div class="trip-fact"><strong>Sicily</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Food Tips</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Eat regionally</strong></div>
+          <div class="trip-fact"><strong>Avoid tourist menus</strong></div>
+          <div class="trip-fact"><strong>Try local markets</strong></div>
+          <div class="trip-fact"><strong>Reserve popular trattorias</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

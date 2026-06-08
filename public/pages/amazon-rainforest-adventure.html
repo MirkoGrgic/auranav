@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exploring the Amazon Rainforest</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-adventure">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Adventure</span>
+
+      <h1>Exploring the Amazon Rainforest</h1>
+
+      <p>
+        Discover one of Earth's most extraordinary ecosystems through
+        jungle expeditions, wildlife encounters, river cruises,
+        and unforgettable adventures deep within the Amazon.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 13 min read</span>
+        <span><i data-lucide="map-pin"></i> Amazon</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $3,300</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1200"
+        alt="Amazon Rainforest">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>The world's greatest rainforest</h2>
+
+      <p>
+        Covering millions of square kilometers across South America,
+        the Amazon Rainforest contains unmatched biodiversity and
+        some of the most remote landscapes on the planet.
+      </p>
+
+      <p>
+        Travelers can experience dense jungle trails, massive rivers,
+        indigenous cultures, exotic wildlife, and breathtaking natural scenery.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Choose eco-certified lodges and local guides
+          to support conservation efforts and gain a deeper understanding
+          of the rainforest.
+        </p>
+      </div>
+
+      <h2>Wildlife encounters</h2>
+
+      <p>
+        The Amazon is home to pink river dolphins, monkeys, macaws,
+        sloths, caimans, jaguars, and thousands of bird species.
+        Guided excursions dramatically improve wildlife spotting opportunities.
+      </p>
+
+      <h2>River expeditions</h2>
+
+      <p>
+        Many Amazon adventures revolve around river travel.
+        Boats provide access to remote communities, jungle lodges,
+        and areas unreachable by road.
+      </p>
+
+      <h2>Night jungle walks</h2>
+
+      <p>
+        After sunset, the rainforest transforms completely.
+        Night excursions reveal insects, frogs, reptiles,
+        and nocturnal wildlife hidden during the day.
+      </p>
+
+      <h2>Visit indigenous communities</h2>
+
+      <p>
+        Cultural experiences offer insight into traditional lifestyles,
+        survival skills, local knowledge, and the relationship between
+        indigenous people and the rainforest.
+      </p>
+
+      <h2>Prepare for the environment</h2>
+
+      <p>
+        High humidity, tropical rain, insects, and heat are part of
+        every Amazon expedition. Proper clothing and equipment are essential.
+      </p>
+
+      <h2>Adventure checklist</h2>
+
+      <ul>
+        <li>Lightweight long-sleeve clothing.</li>
+        <li>Strong insect repellent.</li>
+        <li>Waterproof backpack.</li>
+        <li>Binoculars for wildlife viewing.</li>
+        <li>Rain jacket.</li>
+        <li>Travel insurance covering remote destinations.</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        Few places on Earth feel as wild and untouched as the Amazon.
+        The rainforest offers a rare opportunity to experience nature
+        on a truly massive scale while learning about one of the most
+        important ecosystems on the planet.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Adventure Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Difficulty</span>
+            <strong>Moderate</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal Duration</span>
+            <strong>5–10 Days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Budget</span>
+            <strong>$3,300+</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Environment</span>
+            <strong>Tropical Jungle</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this adventure
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Wildlife Highlights</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Pink Dolphins</strong></div>
+          <div class="trip-fact"><strong>Macaws</strong></div>
+          <div class="trip-fact"><strong>Sloths</strong></div>
+          <div class="trip-fact"><strong>Caimans</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Essential Gear</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Rain Jacket</strong></div>
+          <div class="trip-fact"><strong>Repellent</strong></div>
+          <div class="trip-fact"><strong>Binoculars</strong></div>
+          <div class="trip-fact"><strong>Waterproof Bag</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Perfect For</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Adventure Travelers</strong></div>
+          <div class="trip-fact"><strong>Nature Lovers</strong></div>
+          <div class="trip-fact"><strong>Photographers</strong></div>
+          <div class="trip-fact"><strong>Wildlife Enthusiasts</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>

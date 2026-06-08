@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exploring Route 66</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-roadtrip">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Road Trips</span>
+
+      <h1>Exploring Route 66</h1>
+
+      <p>
+        Travel across America's most legendary highway and experience
+        classic diners, desert landscapes, historic towns, neon signs,
+        and the spirit of the open road.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 12 min read</span>
+        <span><i data-lucide="map-pin"></i> USA</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $2,800</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200"
+        alt="Route 66">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>The Mother Road of America</h2>
+
+      <p>
+        Route 66 stretches from Chicago to Los Angeles and remains one of
+        the world's most famous road trips. Although parts of the original
+        route have been replaced by modern highways, much of its historic
+        charm remains.
+      </p>
+
+      <p>
+        Along the journey you'll find vintage motels, roadside attractions,
+        small-town America, and landscapes that helped define American
+        road trip culture.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Don't rush. The magic of Route 66 comes from
+          exploring small towns and unexpected roadside attractions.
+        </p>
+      </div>
+
+      <h2>Chicago: The Starting Point</h2>
+
+      <p>
+        Most travelers begin in Chicago, where Route 66 officially starts.
+        Spend a day exploring the city before heading west toward the open
+        road.
+      </p>
+
+      <h2>Missouri and Historic Americana</h2>
+
+      <p>
+        Small towns, vintage diners, and classic Route 66 museums provide
+        a glimpse into America's golden age of road travel.
+      </p>
+
+      <h2>Oklahoma and Texas</h2>
+
+      <p>
+        Vast plains and iconic roadside stops dominate this section of the
+        route. Expect giant signs, quirky attractions, and endless horizons.
+      </p>
+
+      <h2>New Mexico Landscapes</h2>
+
+      <p>
+        Route 66 passes through desert scenery, historic pueblos, and
+        colorful towns such as Santa Fe and Albuquerque.
+      </p>
+
+      <h2>Arizona Highlights</h2>
+
+      <p>
+        Arizona contains some of the most famous Route 66 segments,
+        including Seligman, Winslow, and easy access to the Grand Canyon.
+      </p>
+
+      <h2>Arriving in California</h2>
+
+      <p>
+        The final section crosses the Mojave Desert before ending near
+        Santa Monica Pier on the Pacific Coast.
+      </p>
+
+      <h2>Road Trip Tips</h2>
+
+      <ul>
+        <li>Plan at least 10–14 days for the full route.</li>
+        <li>Visit roadside museums and diners.</li>
+        <li>Book accommodations in advance during summer.</li>
+        <li>Bring a camera for classic Americana moments.</li>
+        <li>Allow time for spontaneous detours.</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        Route 66 is more than a highway—it's a journey through American
+        history, culture, and landscapes. Every stop tells a different
+        story and makes the adventure unforgettable.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Road Trip Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Best season</span>
+            <strong>Spring & Fall</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal duration</span>
+            <strong>10–14 days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Budget estimate</span>
+            <strong>$2,800+</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Total distance</span>
+            <strong>3,940 km</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this road trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Must Visit Stops</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Chicago</strong></div>
+          <div class="trip-fact"><strong>Santa Fe</strong></div>
+          <div class="trip-fact"><strong>Seligman</strong></div>
+          <div class="trip-fact"><strong>Santa Monica</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Road Trip Style</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Historic Route</strong></div>
+          <div class="trip-fact"><strong>Roadside Attractions</strong></div>
+          <div class="trip-fact"><strong>Classic America</strong></div>
+          <div class="trip-fact"><strong>Photography</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Best For</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Road Trippers</strong></div>
+          <div class="trip-fact"><strong>History Lovers</strong></div>
+          <div class="trip-fact"><strong>Families</strong></div>
+          <div class="trip-fact"><strong>Adventure Travelers</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>

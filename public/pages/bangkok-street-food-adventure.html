@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Street Food Adventures in Bangkok</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-food">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Food & Culture</span>
+
+      <h1>Street Food Adventures in Bangkok</h1>
+
+      <p>
+        Taste Thailand's legendary street food scene through bustling night
+        markets, hidden alleys, local favorites, and unforgettable flavors.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 8 min read</span>
+        <span><i data-lucide="map-pin"></i> Bangkok</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $1,300</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200"
+           alt="Bangkok Street Food">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Why Bangkok is a street food capital</h2>
+
+      <p>
+        Bangkok is one of the best cities in the world for food lovers.
+        Every neighborhood offers its own specialties, from sizzling woks
+        and charcoal grills to noodle stalls and colorful dessert vendors.
+      </p>
+
+      <p>
+        Street food is deeply woven into daily life. Locals often eat out
+        multiple times per day because delicious and affordable meals are
+        available almost everywhere.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Follow the crowds. Long lines often indicate some of
+          the best local food experiences in Bangkok.
+        </p>
+      </div>
+
+      <h2>Visit Yaowarat (Chinatown)</h2>
+
+      <p>
+        Bangkok's Chinatown transforms every evening into a food paradise.
+        You'll find seafood, grilled meats, noodle dishes, dumplings,
+        mango desserts, and countless local specialties.
+      </p>
+
+      <h2>Explore night markets</h2>
+
+      <p>
+        Markets such as Jodd Fairs offer an incredible variety of food
+        stalls where visitors can sample many dishes in a single evening.
+      </p>
+
+      <h2>Try authentic Pad Thai</h2>
+
+      <p>
+        While famous worldwide, Pad Thai tastes completely different when
+        prepared fresh by experienced local vendors using traditional recipes.
+      </p>
+
+      <h2>Don't skip Thai desserts</h2>
+
+      <p>
+        Mango sticky rice, coconut ice cream, Thai pancakes, and colorful
+        sweets offer the perfect finish to any street food adventure.
+      </p>
+
+      <h2>Must-try dishes</h2>
+
+      <ul>
+        <li>Pad Thai</li>
+        <li>Mango Sticky Rice</li>
+        <li>Tom Yum Soup</li>
+        <li>Thai Fried Rice</li>
+        <li>Satay Skewers</li>
+        <li>Boat Noodles</li>
+      </ul>
+
+      <h2>Final thoughts</h2>
+
+      <p>
+        Bangkok rewards adventurous eaters. Some of the city's most memorable
+        meals cost only a few dollars, making it one of the best destinations
+        for culinary exploration.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Food Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Best meal style</span>
+            <strong>Street food</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Daily food budget</span>
+            <strong>$15–$60</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal duration</span>
+            <strong>3–5 days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Food variety</span>
+            <strong>Excellent</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Must Try</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Pad Thai</strong></div>
+          <div class="trip-fact"><strong>Mango Sticky Rice</strong></div>
+          <div class="trip-fact"><strong>Tom Yum</strong></div>
+          <div class="trip-fact"><strong>Boat Noodles</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Best Food Areas</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Yaowarat</strong></div>
+          <div class="trip-fact"><strong>Sukhumvit</strong></div>
+          <div class="trip-fact"><strong>Jodd Fairs</strong></div>
+          <div class="trip-fact"><strong>Silom</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Food Tips</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Carry cash</strong></div>
+          <div class="trip-fact"><strong>Eat where locals eat</strong></div>
+          <div class="trip-fact"><strong>Try night markets</strong></div>
+          <div class="trip-fact"><strong>Stay hydrated</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheap Eats in Rome</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-budget">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Budget Tips</span>
+
+      <h1>Cheap Eats in Rome</h1>
+
+      <p>
+        Enjoy authentic Italian food without tourist prices. Discover
+        local pizza spots, family-run trattorias, and affordable Roman classics.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 4 min read</span>
+        <span><i data-lucide="map-pin"></i> Rome</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $1,100</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200"
+           alt="Rome food">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Eating well in Rome doesn't require a huge budget</h2>
+
+      <p>
+        Rome is famous for incredible food, but many visitors end up
+        spending far more than necessary because they eat near major
+        attractions. The truth is that some of the city's best meals
+        are found away from tourist-heavy streets.
+      </p>
+
+      <p>
+        Traditional Roman dishes are often simple and affordable,
+        making Rome one of the easiest European capitals for food lovers
+        traveling on a budget.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Avoid restaurants with large tourist menus and
+          aggressive street promoters. Walk two or three streets away
+          from major landmarks for better prices and better food.
+        </p>
+      </div>
+
+      <h2>Grab pizza by the slice</h2>
+
+      <p>
+        Pizza al taglio is one of Rome's best-value meals. You pay by weight,
+        allowing you to try several different flavors without spending much.
+      </p>
+
+      <h2>Look for lunch menus</h2>
+
+      <p>
+        Many local restaurants offer fixed-price lunch menus that include
+        pasta, drinks, and sometimes dessert for significantly less than dinner prices.
+      </p>
+
+      <h2>Try Roman street food</h2>
+
+      <p>
+        Supplì, panini, fresh pastries, and local snacks are affordable,
+        filling, and widely available throughout the city.
+      </p>
+
+      <h2>Explore neighborhood trattorias</h2>
+
+      <p>
+        Areas such as Trastevere and Testaccio offer authentic Roman dining
+        experiences with more local customers and fewer tourist markups.
+      </p>
+
+      <h2>Must-try dishes</h2>
+
+      <ul>
+        <li>Cacio e Pepe</li>
+        <li>Carbonara</li>
+        <li>Amatriciana</li>
+        <li>Supplì</li>
+        <li>Roman-style pizza</li>
+      </ul>
+
+      <h2>Final thoughts</h2>
+
+      <p>
+        Rome proves that incredible food doesn't have to be expensive.
+        With a little local knowledge, travelers can enjoy authentic
+        Italian cuisine while staying comfortably within budget.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Food Budget Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Cheap meal</span>
+            <strong>$5–$10</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Daily food budget</span>
+            <strong>$20–$40</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Best value</span>
+            <strong>Pizza al taglio</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Tourist trap risk</span>
+            <strong>High</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Must Try Foods</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Carbonara</strong></div>
+          <div class="trip-fact"><strong>Cacio e Pepe</strong></div>
+          <div class="trip-fact"><strong>Supplì</strong></div>
+          <div class="trip-fact"><strong>Roman Pizza</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Money Saving Tips</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Eat away from landmarks</strong></div>
+          <div class="trip-fact"><strong>Choose lunch menus</strong></div>
+          <div class="trip-fact"><strong>Use local bakeries</strong></div>
+          <div class="trip-fact"><strong>Avoid tourist menus</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

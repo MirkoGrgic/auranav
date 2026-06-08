@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discovering Cape Town</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-destinations">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+    <div class="article-hero-content">
+      <span class="article-category">Destinations</span>
+
+      <h1>Discovering Cape Town</h1>
+
+      <p>
+        From Table Mountain to penguin beaches, colorful neighborhoods,
+        coastal drives, and local food, Cape Town is one of South Africa’s
+        most unforgettable city escapes.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 8 min read</span>
+        <span><i data-lucide="map-pin"></i> Cape Town</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $2,000</span>
+      </div>
+    </div>
+
+    <div class="article-hero-image">
+      <img src="https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?w=1200"
+           alt="Cape Town coastline">
+    </div>
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Why Cape Town belongs on your travel list</h2>
+
+      <p>
+        Cape Town combines ocean views, mountain landscapes, cultural history,
+        wildlife, food, and adventure in one destination. Few cities offer such
+        a dramatic natural setting while still giving travelers museums, markets,
+        beaches, restaurants, and scenic day trips.
+      </p>
+
+      <p>
+        It is a great destination for travelers who want a mix of city energy and
+        outdoor exploration. You can hike in the morning, visit a beach in the afternoon,
+        and enjoy a sunset dinner by the water.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Plan Cape Town by grouping nearby areas together.
+          This saves time because traffic and distances can make the city feel larger
+          than it looks on a map.
+        </p>
+      </div>
+
+      <h2>Visit Table Mountain</h2>
+
+      <p>
+        Table Mountain is Cape Town’s most famous landmark. You can hike up if you want
+        a challenge or take the cable car for easier access. On a clear day, the view over
+        the city, ocean, and surrounding mountains is incredible.
+      </p>
+
+      <h2>Explore the V&A Waterfront</h2>
+
+      <p>
+        The V&A Waterfront is one of the city’s most popular areas for restaurants,
+        shops, harbor views, and boat tours. It is easy to explore and works well as a
+        first-day stop.
+      </p>
+
+      <h2>See the penguins at Boulders Beach</h2>
+
+      <p>
+        Boulders Beach is known for its colony of African penguins. It is one of the
+        most unique wildlife experiences near Cape Town and can be combined with a scenic
+        coastal drive.
+      </p>
+
+      <h2>Drive toward Cape Point</h2>
+
+      <p>
+        The route toward Cape Point includes dramatic cliffs, ocean viewpoints, small towns,
+        beaches, and nature reserves. It is one of the best day trips from the city.
+      </p>
+
+      <h2>Discover Bo-Kaap</h2>
+
+      <p>
+        Bo-Kaap is known for its brightly colored houses, cobbled streets, and cultural
+        heritage. It is a beautiful area for photography, but it is also important to visit
+        respectfully because it is a living neighborhood.
+      </p>
+
+      <h2>Budget and planning tips</h2>
+
+      <ul>
+        <li>Use organized tours or trusted transport for longer day trips.</li>
+        <li>Check weather before booking Table Mountain cable car tickets.</li>
+        <li>Stay near the Waterfront, Sea Point, or Gardens for easier access.</li>
+        <li>Plan outdoor activities during daylight hours.</li>
+        <li>Combine Boulders Beach and Cape Point into one route.</li>
+      </ul>
+
+      <h2>Final thoughts</h2>
+
+      <p>
+        Cape Town is a city of contrasts: mountains and ocean, history and modern food,
+        adventure and relaxation. With thoughtful planning, it can become one of the most
+        memorable trips on your travel list.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+        <h3>Trip Snapshot</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact">
+            <span>Best time</span>
+            <strong>Nov–Mar</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal duration</span>
+            <strong>5–8 days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Budget estimate</span>
+            <strong>$2,000+</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Travel style</span>
+            <strong>City, nature, coast</strong>
+          </div>
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Must Visit</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Table Mountain</strong></div>
+          <div class="trip-fact"><strong>V&A Waterfront</strong></div>
+          <div class="trip-fact"><strong>Boulders Beach</strong></div>
+          <div class="trip-fact"><strong>Cape Point</strong></div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Good for</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Nature travelers</strong></div>
+          <div class="trip-fact"><strong>Couples</strong></div>
+          <div class="trip-fact"><strong>Food lovers</strong></div>
+          <div class="trip-fact"><strong>Photography</strong></div>
+        </div>
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

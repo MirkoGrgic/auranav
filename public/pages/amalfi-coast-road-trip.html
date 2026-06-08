@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Driving Across the Amalfi Coast</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-roadtrip">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Road Trips</span>
+
+      <h1>Driving Across the Amalfi Coast</h1>
+
+      <p>
+        Experience one of Europe's most spectacular coastal drives,
+        passing colorful cliffside villages, dramatic sea views,
+        and unforgettable Italian scenery.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 8 min read</span>
+        <span><i data-lucide="map-pin"></i> Italy</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $2,400</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=1200"
+        alt="Amalfi Coast">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Italy's most famous coastal road</h2>
+
+      <p>
+        The Amalfi Coast is legendary among road-trip enthusiasts.
+        The winding roads connect picturesque towns perched above
+        the Mediterranean, offering breathtaking views around
+        nearly every corner.
+      </p>
+
+      <p>
+        Although the route itself is relatively short, the journey
+        is all about stopping frequently, exploring villages,
+        and enjoying the scenery.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Start driving early in the morning to avoid
+          heavy traffic and enjoy the best lighting for photography.
+        </p>
+      </div>
+
+      <h2>Start in Sorrento</h2>
+
+      <p>
+        Sorrento serves as the ideal gateway to the Amalfi Coast.
+        Its historic center, ocean views, and ferry connections
+        make it a great place to begin your journey.
+      </p>
+
+      <h2>Discover Positano</h2>
+
+      <p>
+        Positano is the Amalfi Coast's most iconic destination,
+        famous for colorful buildings cascading down steep cliffs
+        toward the sea.
+      </p>
+
+      <h2>Visit Amalfi Town</h2>
+
+      <p>
+        The town of Amalfi offers beautiful architecture,
+        lively piazzas, and access to some of the region's
+        most important historical landmarks.
+      </p>
+
+      <h2>Explore Ravello</h2>
+
+      <p>
+        Sitting high above the coast, Ravello provides panoramic
+        views and elegant gardens that have inspired artists
+        and travelers for generations.
+      </p>
+
+      <h2>Enjoy local cuisine</h2>
+
+      <p>
+        Fresh seafood, handmade pasta, local wines,
+        and Amalfi lemons are essential parts of the experience.
+      </p>
+
+      <h2>Road trip tips</h2>
+
+      <ul>
+        <li>Book accommodations months in advance.</li>
+        <li>Drive cautiously on narrow cliffside roads.</li>
+        <li>Use smaller rental cars when possible.</li>
+        <li>Allow extra time for traffic during summer.</li>
+        <li>Carry cash for parking areas and small cafés.</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        The Amalfi Coast is less about covering distance and more
+        about enjoying every stop along the way. With stunning views,
+        charming towns, and incredible food, it remains one of the
+        world's most rewarding road trips.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Road Trip Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Route Length</span>
+            <strong>50 km</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Best Season</span>
+            <strong>Apr–Jun</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Budget</span>
+            <strong>$2,400+</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Driving Level</span>
+            <strong>Moderate</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this road trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Best Stops</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Sorrento</strong></div>
+          <div class="trip-fact"><strong>Positano</strong></div>
+          <div class="trip-fact"><strong>Amalfi</strong></div>
+          <div class="trip-fact"><strong>Ravello</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Driving Tips</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Start Early</strong></div>
+          <div class="trip-fact"><strong>Small Car</strong></div>
+          <div class="trip-fact"><strong>Book Parking</strong></div>
+          <div class="trip-fact"><strong>Avoid Rush Hours</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Perfect For</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Couples</strong></div>
+          <div class="trip-fact"><strong>Photographers</strong></div>
+          <div class="trip-fact"><strong>Food Lovers</strong></div>
+          <div class="trip-fact"><strong>Scenic Drives</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>

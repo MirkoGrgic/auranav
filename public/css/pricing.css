@@ -1,0 +1,427 @@
+.hero {
+      background: linear-gradient(135deg, #1e3a8a, #1e40af, #0f766e);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #bfdbfe;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 4rem;
+      }
+    }
+/* Pricing Section */
+.pricing {
+  background: #f9fafb;
+  padding: 100px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.cards {
+  display: grid;
+  gap: 40px;
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.price{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: -5px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+.card.highlighted {
+  border: 3px solid #2563eb;
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #2563eb, #14b8a6);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.icon.gray {
+  background: linear-gradient(to bottom right, #9ca3af, #6b7280);
+}
+.icon.gray svg {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+.icon.gradient {
+  background: linear-gradient(to bottom right, #2563eb, #14b8a6);
+}
+.icon.gradient svg {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.desc {
+  color: #6b7280;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.amount {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.period {
+  color: #6b7280;
+  margin-left: 8px;
+}
+
+.features {
+  margin-bottom: 32px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+.circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle.green {
+  background: #dcfce7;
+}
+
+.circle.green svg {
+  color: #16a34a;
+  width: 14px;
+}
+
+.circle.gray {
+  background: #f3f4f6;
+}
+
+.circle.gray svg {
+  color: #9ca3af;
+  width: 14px;
+}
+
+.feature.excluded {
+  color: #9ca3af;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.btn.dark {
+  background: #111827;
+  color: white;
+}
+
+.btn.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.bottom-text {
+  text-align: center;
+  margin-top: 50px;
+  color: #6b7280;
+}
+
+/* Compare Section */
+.compare {
+  padding: 100px 20px;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.heading p {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.pricing-table thead tr {
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.pricing-table th {
+  padding: 18px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+}
+
+.pricing-table th.left {
+  text-align: left;
+}
+
+
+.pricing-table tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.pricing-table td {
+  padding: 18px 24px;
+  font-size: 15px;
+  color: #374151;
+}
+
+
+.pricing-table td:first-child {
+  text-align: left;
+}
+
+.pricing-table td:not(:first-child) {
+  text-align: center;
+}
+
+
+.pricing-table svg {
+  width: 20px;
+  height: 20px;
+  color: #16a34a;
+}
+
+.pricing-table .muted {
+  color: #d1d5db;
+}
+
+/* FAQ Section */
+
+.faq {
+  background: #f9fafb;
+  padding: 100px 20px;
+}
+
+.faq-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+.faq-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.faq-heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+}
+
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.faq-item {
+  background: #ffffff;
+  padding: 24px 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+
+.faq-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+
+.faq-item p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+
+.faq-bottom {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.faq-bottom p {
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.faq-bottom a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.faq-bottom a:hover {
+  color: #1d4ed8;
+}
+
+/* CTA Section */
+.cta {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #1e3a8a, #0f766e);
+  color: white;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.cta h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+
+.cta p {
+  font-size: 20px;
+  color: #bfdbfe;
+  margin-bottom: 32px;
+}
+
+
+.cta-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #1e3a8a;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cta-btn:hover {
+  background: #f3f4f6;
+}
+
+
+@media (max-width: 768px) {
+  .cta h2 {
+    font-size: 34px;
+  }
+
+  .cta p {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Beaches in Portugal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-local">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Local Secrets</span>
+
+      <h1>Hidden Beaches in Portugal</h1>
+
+      <p>
+        Discover quiet coves, golden cliffs, wild Atlantic coastlines,
+        and peaceful beach escapes away from Portugal’s busiest tourist spots.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 6 min read</span>
+        <span><i data-lucide="map-pin"></i> Portugal</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $1,500</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200"
+        alt="Hidden beach in Portugal">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Portugal’s quieter coastline</h2>
+
+      <p>
+        Portugal is famous for the Algarve, Lisbon beaches, and surf towns,
+        but some of the country’s most beautiful coastal places are hidden
+        just beyond the obvious routes.
+      </p>
+
+      <p>
+        Smaller coves, cliffside paths, and wild Atlantic beaches offer
+        a calmer experience for travelers who want space, scenery, and
+        a more local feeling.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Rent a car for hidden beaches. Many of the best
+          coastal spots are difficult to reach by public transport.
+        </p>
+      </div>
+
+      <h2>Look beyond the main Algarve beaches</h2>
+
+      <p>
+        The Algarve is beautiful, but the busiest beaches can feel crowded
+        in summer. Smaller coves near cliffs often provide a much better
+        experience if you arrive early.
+      </p>
+
+      <h2>Explore the Vicentine Coast</h2>
+
+      <p>
+        Portugal’s southwest coast feels wilder and less developed than
+        many resort areas. Expect dramatic cliffs, surf beaches, and
+        peaceful sunsets.
+      </p>
+
+      <h2>Visit beaches near Arrábida</h2>
+
+      <p>
+        South of Lisbon, the Arrábida region offers turquoise water,
+        green hills, and several scenic beaches that feel surprisingly
+        remote for their location.
+      </p>
+
+      <h2>Go early or late</h2>
+
+      <p>
+        Hidden beaches are best enjoyed in the morning or near sunset.
+        Light is softer, parking is easier, and the atmosphere feels much calmer.
+      </p>
+
+      <h2>Pack for comfort</h2>
+
+      <p>
+        Some beaches have limited facilities. Bring water, snacks, sun protection,
+        and comfortable shoes for walking down cliff paths.
+      </p>
+
+      <h2>Beach planning tips</h2>
+
+      <ul>
+        <li>Check tide times before visiting small coves.</li>
+        <li>Bring cash for parking or small beach cafés.</li>
+        <li>Wear shoes suitable for rocky paths.</li>
+        <li>Arrive early during July and August.</li>
+        <li>Respect protected nature areas.</li>
+      </ul>
+
+      <h2>Final thoughts</h2>
+
+      <p>
+        Portugal’s hidden beaches reward travelers who explore slowly.
+        Instead of only visiting famous coastal spots, follow smaller roads,
+        ask locals, and leave time for unexpected ocean views.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Local Secrets Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Best region</span>
+            <strong>Alentejo Coast</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Beach budget</span>
+            <strong>$15–$40/day</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Best time</span>
+            <strong>June / September</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Travel style</span>
+            <strong>Coastal slow travel</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Hidden Beach Areas</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Vicentine Coast</strong></div>
+          <div class="trip-fact"><strong>Arrábida</strong></div>
+          <div class="trip-fact"><strong>Western Algarve</strong></div>
+          <div class="trip-fact"><strong>Alentejo Coast</strong></div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Local Tips</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Arrive early</strong></div>
+          <div class="trip-fact"><strong>Check tides</strong></div>
+          <div class="trip-fact"><strong>Bring water</strong></div>
+          <div class="trip-fact"><strong>Use a rental car</strong></div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Avoid Tourist Traps</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Overcrowded beach clubs</strong></div>
+          <div class="trip-fact"><strong>Peak midday parking</strong></div>
+          <div class="trip-fact"><strong>Only famous Algarve spots</strong></div>
+          <div class="trip-fact"><strong>Restaurants on main strips</strong></div>
+        </div>
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>

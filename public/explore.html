@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AuraNav Blog</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="css/explore.css">
+<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+
+  <li><a href="/">Home</a></li>
+  <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+  <li><a href="/explore">Explore</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/pricing">Pricing</a></li>
+
+  </ul>
+
+  <div class="nav-right">
+
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+
+        <div class="notif-list"></div>
+
+        <div class="notif-footer">
+          View all notifications
+        </div>
+      </div>
+
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <!-- mobile button -->
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+
+<section class="blog-section">
+
+<div class="blog-container">
+
+  <!-- HEADER -->
+  <div class="blog-header">
+    <h1>Explore Travel Stories</h1>
+    <p>
+      Get inspired by travel guides, budget tips, and hidden gems from around the world.
+    </p>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="blog-filters" id="filters"></div>
+
+  <!-- FEATURED -->
+  <div id="featured"></div>
+
+  <!-- GRID -->
+  <div class="blog-grid" id="blogGrid"></div>
+
+  <!-- LOAD MORE -->
+  <div class="load-more-wrap">
+    <button class="load-more">Load More Articles</button>
+  </div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    
+    <div class="footer-brand">
+  
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="js/nav.js"></script>
+<script src="js/explore.js"></script>
+
+</body>
+</html>

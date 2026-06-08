@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budgeting for Zagreb</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-budget">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+    <div class="article-hero-content">
+      <span class="article-category">Budget Tips</span>
+
+      <h1>Budgeting for Zagreb: A Complete Guide</h1>
+
+      <p>
+        Learn how much to expect for accommodation, food, transport,
+        sightseeing, and daily expenses in Croatia’s capital city.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 6 min read</span>
+        <span><i data-lucide="map-pin"></i> Zagreb</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $800</span>
+      </div>
+    </div>
+
+    <div class="article-hero-image">
+      <img src="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?w=1200"
+           alt="Zagreb city">
+    </div>
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Why Zagreb is a good budget destination</h2>
+
+      <p>
+        Zagreb is one of the more affordable European capitals, especially compared
+        to cities like Paris, Amsterdam, London, or Rome. It offers walkable streets,
+        cafés, museums, parks, markets, and easy public transport without requiring
+        a huge daily budget.
+      </p>
+
+      <p>
+        The city is ideal for travelers who want culture, food, and a relaxed local
+        atmosphere while keeping costs under control.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Zagreb is easiest to budget when you stay near the center,
+          walk often, and mix paid museums with free parks, viewpoints, and markets.
+        </p>
+      </div>
+
+      <h2>Accommodation costs</h2>
+
+      <p>
+        Budget travelers can usually find hostels or simple rooms at reasonable prices,
+        while mid-range hotels and apartments are still cheaper than in many Western
+        European capitals. Staying near the city center can save money on transport.
+      </p>
+
+      <h2>Food and café prices</h2>
+
+      <p>
+        Zagreb has a strong café culture and plenty of bakeries, casual restaurants,
+        and traditional food spots. A simple breakfast from a bakery is affordable,
+        while lunch menus and local restaurants can keep daily food costs manageable.
+      </p>
+
+      <h2>Public transport</h2>
+
+      <p>
+        Trams and buses are useful, but Zagreb is also very walkable. For most short
+        trips in the center, walking is the easiest and cheapest option.
+      </p>
+
+      <h2>Free and low-cost things to do</h2>
+
+      <p>
+        Zagreb has many free or cheap experiences, including parks, markets, historic
+        streets, viewpoints, and seasonal events. Places like Ban Jelačić Square,
+        Upper Town, Dolac Market, and Zrinjevac are easy to enjoy without spending much.
+      </p>
+
+      <h2>Sample daily budget</h2>
+
+      <ul>
+        <li>Budget traveler: $40–$70 per day</li>
+        <li>Mid-range traveler: $80–$130 per day</li>
+        <li>Comfort traveler: $150+ per day</li>
+        <li>Weekend trip estimate: around $250–$450 excluding flights</li>
+      </ul>
+
+      <h2>Final thoughts</h2>
+
+      <p>
+        Zagreb is a smart choice for travelers who want a European capital experience
+        without high costs. With good planning, it is possible to enjoy museums, cafés,
+        local food, parks, and day trips while staying within a reasonable budget.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+        <h3>Budget Breakdown</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact">
+            <span>Daily budget</span>
+            <strong>$40–$130</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Ideal duration</span>
+            <strong>2–4 days</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Trip estimate</span>
+            <strong>$800+</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Best value</span>
+            <strong>Walking + cafés + markets</strong>
+          </div>
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan this trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Money-saving Tips</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Use trams or walk</strong></div>
+          <div class="trip-fact"><strong>Eat at bakeries</strong></div>
+          <div class="trip-fact"><strong>Visit free parks</strong></div>
+          <div class="trip-fact"><strong>Stay near center</strong></div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Best Value Stops</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Dolac Market</strong></div>
+          <div class="trip-fact"><strong>Upper Town</strong></div>
+          <div class="trip-fact"><strong>Zrinjevac Park</strong></div>
+          <div class="trip-fact"><strong>Ban Jelačić Square</strong></div>
+        </div>
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

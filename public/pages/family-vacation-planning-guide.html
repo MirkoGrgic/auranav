@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Vacation Planning Guide</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-planning">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Planning</span>
+
+      <h1>Family Vacation Planning Guide</h1>
+
+      <p>
+        Discover practical tips for planning stress-free family vacations,
+        keeping children entertained, managing budgets, and creating
+        unforgettable travel memories together.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 8 min read</span>
+        <span><i data-lucide="map-pin"></i> Worldwide</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $2,300</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200"
+        alt="Family Vacation">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Why family travel matters</h2>
+
+      <p>
+        Family vacations create shared experiences that often become
+        lifelong memories. Traveling together allows families to
+        disconnect from daily routines and spend quality time
+        exploring new places.
+      </p>
+
+      <p>
+        With proper planning, even large family trips can remain
+        affordable, enjoyable, and surprisingly stress-free.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Build your itinerary around your children’s energy
+          levels instead of trying to see everything in one day.
+        </p>
+      </div>
+
+      <h2>Choose family-friendly destinations</h2>
+
+      <p>
+        Look for destinations that offer safe environments,
+        child-friendly attractions, easy transportation,
+        and accommodation suitable for families.
+      </p>
+
+      <h2>Plan realistic itineraries</h2>
+
+      <p>
+        Avoid overscheduling. Children often need breaks,
+        flexible meal times, and opportunities to relax
+        between activities.
+      </p>
+
+      <h2>Book accommodation wisely</h2>
+
+      <p>
+        Apartments, family suites, and vacation rentals often
+        provide more space and better value than booking multiple
+        hotel rooms.
+      </p>
+
+      <h2>Keep kids entertained during travel</h2>
+
+      <p>
+        Long flights and road trips become easier when children
+        have access to games, books, snacks, and downloaded
+        entertainment.
+      </p>
+
+      <h2>Budget for unexpected expenses</h2>
+
+      <p>
+        Family trips often include surprise costs such as snacks,
+        transportation changes, activity upgrades, and emergency purchases.
+      </p>
+
+      <h2>Family Travel Checklist</h2>
+
+      <ul>
+        <li>Passports and travel documents.</li>
+        <li>Medical supplies and prescriptions.</li>
+        <li>Entertainment for children.</li>
+        <li>Travel insurance.</li>
+        <li>Backup snacks and water bottles.</li>
+        <li>Emergency contact information.</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        Successful family vacations focus on experiences rather than
+        perfection. A flexible schedule, proper preparation,
+        and realistic expectations help ensure everyone enjoys
+        the journey.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Family Trip Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Ideal Group</span>
+            <strong>Families</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Budget</span>
+            <strong>$2,300+</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Planning</span>
+            <strong>Moderate</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Flexibility</span>
+            <strong>Essential</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan Family Trip
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Family Essentials</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Travel Insurance</strong></div>
+          <div class="trip-fact"><strong>Medical Kit</strong></div>
+          <div class="trip-fact"><strong>Entertainment</strong></div>
+          <div class="trip-fact"><strong>Snacks</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Best Family Trips</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Theme Parks</strong></div>
+          <div class="trip-fact"><strong>Beach Resorts</strong></div>
+          <div class="trip-fact"><strong>National Parks</strong></div>
+          <div class="trip-fact"><strong>City Breaks</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Avoid These Mistakes</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Overplanning</strong></div>
+          <div class="trip-fact"><strong>Skipping breaks</strong></div>
+          <div class="trip-fact"><strong>Ignoring naps</strong></div>
+          <div class="trip-fact"><strong>No backup budget</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Insurance Explained</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">
+      <i data-lucide="plane"></i>
+    </div>
+    <span><a href="/">AuraNav</a></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li id="dashboardLink" class="hidden"><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+  </ul>
+
+  <div class="nav-right">
+
+    <div class="notification">
+      <i data-lucide="bell"></i>
+      <span class="badge-count">0</span>
+
+      <div class="notif-dropdown hidden">
+        <h4>Notifications</h4>
+        <div class="notif-list"></div>
+        <div class="notif-footer">View all notifications</div>
+      </div>
+    </div>
+
+    <div id="userArea" class="auth-area"></div>
+
+    <button id="menuBtn" class="menu-btn">
+      <i data-lucide="menu"></i>
+    </button>
+
+  </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu hidden">
+  <a href="/">Home</a>
+  <a href="/dashboard" id="mobileDashboardLink" class="hidden">Dashboard</a>
+  <a href="/explore">Explore</a>
+  <a href="/about">About</a>
+  <a href="/pricing">Pricing</a>
+</div>
+
+<main class="article-page article-planning">
+
+  <a href="/explore" class="article-back">
+    ← Back to Explore
+  </a>
+
+  <section class="article-hero">
+
+    <div class="article-hero-content">
+
+      <span class="article-category">Planning</span>
+
+      <h1>Travel Insurance Explained</h1>
+
+      <p>
+        Understand what travel insurance actually covers,
+        what it doesn't, and how to choose the right protection
+        before your next adventure.
+      </p>
+
+      <div class="article-meta">
+        <span><i data-lucide="clock"></i> 5 min read</span>
+        <span><i data-lucide="map-pin"></i> Worldwide</span>
+        <span><i data-lucide="dollar-sign"></i> Estimated Cost: $300</span>
+      </div>
+
+    </div>
+
+    <div class="article-hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1200"
+        alt="Travel Insurance">
+    </div>
+
+  </section>
+
+  <section class="article-layout">
+
+    <article class="article-content">
+
+      <h2>Why travel insurance matters</h2>
+
+      <p>
+        Many travelers see travel insurance as an unnecessary expense,
+        but unexpected situations can quickly become expensive.
+        Medical emergencies, canceled flights, lost luggage,
+        and trip interruptions can cost far more than the insurance itself.
+      </p>
+
+      <div class="highlight-box">
+        <p>
+          AuraNav tip: Travel insurance is often most valuable for
+          medical emergencies abroad, not just flight cancellations.
+        </p>
+      </div>
+
+      <h2>Medical coverage</h2>
+
+      <p>
+        Medical protection is usually the most important part of any policy.
+        Healthcare costs can be extremely expensive in some countries,
+        especially if hospitalization or emergency transportation is required.
+      </p>
+
+      <h2>Trip cancellation protection</h2>
+
+      <p>
+        This coverage may reimburse prepaid travel expenses if you
+        need to cancel your trip for a covered reason such as illness,
+        injury, or certain emergencies.
+      </p>
+
+      <h2>Lost or delayed baggage</h2>
+
+      <p>
+        Many policies include compensation if luggage is delayed,
+        damaged, or lost during transit.
+      </p>
+
+      <h2>Emergency assistance</h2>
+
+      <p>
+        Most insurers provide 24/7 emergency assistance services,
+        helping travelers find hospitals, arrange transportation,
+        or receive support during emergencies.
+      </p>
+
+      <h2>What insurance usually doesn't cover</h2>
+
+      <p>
+        Policies often exclude pre-existing medical conditions,
+        extreme sports, risky activities, and cancellations that
+        do not meet the policy's requirements.
+      </p>
+
+      <h2>Before buying a policy</h2>
+
+      <ul>
+        <li>Read coverage limits carefully.</li>
+        <li>Check medical coverage amounts.</li>
+        <li>Review exclusions and restrictions.</li>
+        <li>Compare multiple providers.</li>
+        <li>Keep digital copies of policy documents.</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        Travel insurance provides peace of mind and financial protection.
+        While nobody plans for problems during a trip, having the right
+        coverage can make a major difference when unexpected situations occur.
+      </p>
+
+    </article>
+
+    <aside class="article-sidebar">
+
+      <div class="sidebar-card">
+
+        <h3>Coverage Snapshot</h3>
+
+        <div class="trip-facts">
+
+          <div class="trip-fact">
+            <span>Medical</span>
+            <strong>Essential</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Trip Cancellation</span>
+            <strong>Recommended</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Baggage</span>
+            <strong>Useful</strong>
+          </div>
+
+          <div class="trip-fact">
+            <span>Emergency Support</span>
+            <strong>24/7</strong>
+          </div>
+
+        </div>
+
+        <a href="/signup" class="article-cta" id="articlePlanBtn">
+          Plan Smarter
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Most Important Coverage</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Medical Emergencies</strong></div>
+          <div class="trip-fact"><strong>Hospitalization</strong></div>
+          <div class="trip-fact"><strong>Emergency Evacuation</strong></div>
+          <div class="trip-fact"><strong>Trip Interruption</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Common Mistakes</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>Buying cheapest policy</strong></div>
+          <div class="trip-fact"><strong>Ignoring exclusions</strong></div>
+          <div class="trip-fact"><strong>No medical review</strong></div>
+          <div class="trip-fact"><strong>Not saving documents</strong></div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-card">
+
+        <h3>Best For</h3>
+
+        <div class="trip-facts">
+          <div class="trip-fact"><strong>International Trips</strong></div>
+          <div class="trip-fact"><strong>Families</strong></div>
+          <div class="trip-fact"><strong>Long-Term Travel</strong></div>
+          <div class="trip-fact"><strong>Adventure Travelers</strong></div>
+        </div>
+
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <div class="footer-logo">
+          <i data-lucide="plane"></i>
+        </div>
+        <h3>AuraNav</h3>
+      </div>
+
+      <p>Your next adventure, planned by AI.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/explore">Blog</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about">Careers</a>
+      <a href="/about">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AuraNav. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/js/nav.js"></script>
+<script type="module" src="/js/article.js"></script>
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>
