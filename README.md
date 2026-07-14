@@ -12,17 +12,17 @@ Built using **HTML**, **CSS**, **Vanilla JavaScript**, **Node.js**, **Express.js
 
 # 📱 Application Preview
 
-| Landing Page   | Explore Articles | AI Trip Planner |
-| -------------- | ---------------- | --------------- |
-| *(Screenshot)* | *(Screenshot)*   | *(Screenshot)*  |
+| Landing Page | Explore Articles | AboutUs Page |
+|--------------|------------------|-----------------|
+| <img src="https://i.imgur.com/KcomGu7.jpeg" width="220"> | <img src="https://i.imgur.com/aYeR7Vk.jpeg" width="220"> | <img src="https://i.imgur.com/dSnihEV.jpeg" width="220"> |
 
-| Dashboard      | Interactive Map | Weather Forecast |
-| -------------- | --------------- | ---------------- |
-| *(Screenshot)* | *(Screenshot)*  | *(Screenshot)*   |
+| Dashboard | Interactive Map | AI plan,Weather and Budget |
+|-----------|-----------------|------------------|
+| <img src="https://i.imgur.com/rZUbo3N.jpeg" width="220"> | <img src="https://i.imgur.com/m3XD3kN.jpeg" width="220"> | <img src="https://i.imgur.com/GluWVb4.jpeg" width="220"> |
 
-| User Profile   | Admin Dashboard | Pricing        |
-| -------------- | --------------- | -------------- |
-| *(Screenshot)* | *(Screenshot)*  | *(Screenshot)* |
+| User Profile | Admin Dashboard | Pricing Page |
+|--------------|-----------------|---------|
+| <img src="https://i.imgur.com/sY1FhL7.jpeg" width="220"> | <img src="https://i.imgur.com/P1uNbJy.jpeg" width="220"> | <img src="https://i.imgur.com/e7ZiqBG.jpeg" width="220"> |
 
 ---
 
